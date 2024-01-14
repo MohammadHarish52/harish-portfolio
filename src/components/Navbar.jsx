@@ -10,7 +10,7 @@ const Navbar = () => {
         <p className="text-sm">Front-end Developer</p>
       </div>
       <div className="flex space-x-4">
-        <Link to="/" className="hover:underline">
+        <Link to="/" className="hover:">
           Home
         </Link>
         <Link to="/about" className="hover:underline">
