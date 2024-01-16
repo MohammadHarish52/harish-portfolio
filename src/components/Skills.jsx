@@ -45,17 +45,13 @@ const skillsData = [
 const Skills = () => {
   return (
     <Layout>
-      <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-16 min-h-screen"
-        style={{ backgroundColor: "var(--color-primary)" }}
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-16 min-h-screen bg-gray-100">
         {skillsData.map((skill, index) => (
           <div
             key={index}
-            className="p-6 border rounded-md shadow-md"
+            className="p-6 border rounded-md shadow-md hover:bg-slate-400"
             style={{
-              backgroundColor: "var(--color-background)",
-              color: "var(--color-primary)",
+              backgroundColor: "white",
             }}
           >
             <img
