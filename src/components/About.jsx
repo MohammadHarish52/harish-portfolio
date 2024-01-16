@@ -29,16 +29,16 @@ const About = () => {
               a lighter note, I'm a devoted One Piece fan and intrigued by the
               wonders of GenAi. 🚀
             </p>
-            <button className="bg-black text-white py-2 px-4 hover:bg-white hover:text-black transition duration-300">
+            <button className="bg-black text-white py-2 px-4 hover:bg-white hover:text-black transition duration-300 hover:bg hover:duration-700">
               Resume
             </button>
           </div>
           <div className="md:w-1/2 image">
             <img
-              className={`w-full h-auto md:w-full rounded-lg shadow-lg ${
+              className={`w-full h-auto md:w-full rounded-lg shadow-lg z-1 ${
                 color ? "colorful" : "bw"
               }`}
-              src="public/assets/IMG_20230504_140121.jpg"
+              src="public/assets/harish.jpg"
               alt="Profile"
             />
           </div>

@@ -1,5 +1,5 @@
 import { FaLinkedin } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
@@ -49,7 +49,7 @@ const Footer = () => {
             href="https://twitter.com/Mohamma59305726"
             className="text-gray-500 flex items-center mb-2"
           >
-            <FaTwitter className="mr-2  text-gray-700" /> Twitter
+            <FaXTwitter className="mr-2  text-gray-700" /> Twitter
           </a>
           <a
             href="https://github.com/MohammadHarish52"

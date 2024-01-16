@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <section className="py-16 bg-gray-white">
+      <section className="py-16 bg-gray-white z-1">
         <div className="container mx-auto flex flex-col md:flex-row items-start md:items-center justify-around">
           <div className="md:w-1/2 mb-8 md:mb-0 description text-left p-8 md:p-16">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2">

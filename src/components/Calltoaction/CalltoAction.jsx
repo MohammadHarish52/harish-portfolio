@@ -10,11 +10,16 @@ const CalltoAction = () => {
       <p>Need A Web Developer ?</p>
       <Link to="/contacts">
         <div className="wrapper flex ">
-          <FaArrowLeft className="text-6xl m-auto mr-8  " />
-          <h1 data-aos="zoom-in" className="aos-init aos-animate font-bold">
+          <FaArrowRight className="text-6xl m-auto ml-8 " />
+
+          <h1
+            data-aos="zoom-in"
+            className="aos-init aos-animate font-bold
+            hover:trasition-border hover:duration-700 hover:border-b-4 hover:border-black"
+          >
             Lets work Together
           </h1>
-          <FaArrowRight className="text-6xl m-auto ml-8 " />
+          <FaArrowLeft className="text-6xl m-auto mr-8  " />
         </div>
       </Link>
     </div>

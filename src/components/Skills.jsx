@@ -2,43 +2,50 @@
 
 import "/src/index.css"; // Import your Tailwind CSS file
 
-import htmlImage from "/public/assets/html.png";
-import cssImage from "/public/assets/css.png";
-import javascriptImage from "/public/assets/javascript.png";
-import reactImage from "/public/assets/react.png";
-import nodeImage from "/public/assets/node.png";
-import tailwindImage from "/public/assets/tailwind.png";
-import typescriptImage from "/public/assets/ts.png";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import { FaReact } from "react-icons/fa6";
+import { FaNode } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 import Layout from "./Layout";
 
 const skillsData = [
   {
     name: "HTML",
-    src: htmlImage,
+    src: <FaHtml5 className="text-6xl" />,
+    stars: 4, // Add the number of stars for each skill
   },
   {
     name: "CSS",
-    src: cssImage,
+    src: <FaCss3Alt className="text-6xl" />,
+    stars: 4,
   },
   {
     name: "JavaScript",
-    src: javascriptImage,
+    src: <SiJavascript className="text-6xl" />,
+    stars: 4,
   },
   {
     name: "React",
-    src: reactImage,
+    src: <FaReact className="text-6xl" />,
+    stars: 4,
   },
   {
     name: "Node.js",
-    src: nodeImage,
+    src: <FaNode className="text-6xl" />,
+    stars: 3,
   },
   {
     name: "Tailwind CSS",
-    src: tailwindImage,
+    src: <SiTailwindcss className="text-6xl" />,
+    stars: 3,
   },
   {
     name: "TypeScript",
-    src: typescriptImage,
+    src: <SiTypescript className="text-6xl" />,
+    stars: 3,
   },
 ];
 
@@ -49,17 +56,20 @@ const Skills = () => {
         {skillsData.map((skill, index) => (
           <div
             key={index}
-            className="p-6 border rounded-md shadow-md hover:bg-slate-400"
+            className="p-6 border rounded-md shadow-md hover:bg-slate-400 transition-transform duration-300 ease-in-out transform hover:scale-105"
             style={{
               backgroundColor: "white",
             }}
           >
-            <img
-              className="mx-auto w-16 h-16 mb-4"
-              src={skill.src}
-              alt={skill.name}
-            />
-            <p className="text-lg font-semibold mb-2">{skill.name}</p>
+            <div className="mb-4">{skill.src}</div>
+            <h1 className="text-2xl font-thin mb-2">{skill.name}</h1>
+            <div className="stars-model">
+              {[...Array(skill.stars)].map((star, i) => (
+                <span key={i} className="text-gray-900 text-2xl">
+                  &#9733;
+                </span>
+              ))}
+            </div>
           </div>
         ))}
       </div>
