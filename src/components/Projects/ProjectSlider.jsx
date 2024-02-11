@@ -1,70 +1,38 @@
-import { useState, useEffect } from "react";
-import { FaCaretRight } from "react-icons/fa";
-import { FaCaretLeft } from "react-icons/fa";
-
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 import { projectsArray } from "./Arrayproject";
-import Project from "/src/components/Projects/Project.jsx";
+
+const spanStyle = {
+  padding: "20px",
+  background: "#efefef",
+  color: "#000000",
+};
+const divStyle = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  backgroundSize: "cover",
+  height: "80vh",
+  width: "100vw",
+};
 
 const ProjectSlider = () => {
-  const [currentProject, setCurrentProject] = useState(0);
-  let interval;
-
-  useEffect(() => {
-    interval = setInterval(() => {
-      setCurrentProject((prevProject) =>
-        prevProject === projectsArray.length - 1 ? 0 : prevProject + 1
-      );
-    }, 10000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const handlePrevProject = () => {
-    setCurrentProject((prevProject) =>
-      prevProject === 0 ? projectsArray.length - 1 : prevProject - 1
-    );
-  };
-
-  const handleNextProject = () => {
-    setCurrentProject((prevProject) =>
-      prevProject === projectsArray.length - 1 ? 0 : prevProject + 1
-    );
-  };
-
-  const handleHover = () => {
-    clearInterval(interval);
-  };
-
-  const handleLeave = () => {
-    // Restart the interval when leaving hover
-    interval = setInterval(() => {
-      setCurrentProject((prevProject) =>
-        prevProject === projectsArray.length - 1 ? 0 : prevProject + 1
-      );
-    }, 10000);
-  };
-
   return (
-    <div
-      className="relative w-full h-screen overflow-hidden"
-      onMouseEnter={handleHover}
-      onMouseLeave={handleLeave}
-    >
-      <button
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-2xl"
-        onClick={handlePrevProject}
-      >
-        <FaCaretLeft className="text-8xl" />
-      </button>
-      <button
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-2xl"
-        onClick={handleNextProject}
-      >
-        <FaCaretRight className="text-8xl" />
-      </button>
-      <div className="w-full h-full">
-        <Project project={projectsArray[currentProject]} />
-      </div>
+    <div className="slide-container h-100 w-100 p-4">
+      <Slide>
+        {projectsArray.map((slideImage, index) => (
+          <div key={index}>
+            <div
+              style={{
+                ...divStyle,
+                backgroundImage: `url(${slideImage.imageSrc})`,
+              }}
+            >
+              <span style={spanStyle}>{slideImage.caption}</span>
+            </div>
+          </div>
+        ))}
+      </Slide>
     </div>
   );
 };

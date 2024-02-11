@@ -1,7 +1,5 @@
-import React from "react";
-
 const Project = () => {
-  return <div className=""></div>;
+  return <div className="">hi</div>;
 };
 
 export default Project;
