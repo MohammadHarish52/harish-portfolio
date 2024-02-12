@@ -3,7 +3,7 @@ export const projectsArray = [
     id: 1,
     Name: "Aesop UI-clone",
     Description:
-      "This is a clone of the Aesop website Landing Page,which i created within 4 days using React and Tailwind.",
+      "This is a clone of the Aesop website Landing Page, created within 4 days using React and Tailwind.",
     imageSrc: "/public/assets/Projectimages/Aesop.png",
     Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript"],
     LinkGit: "https://timely-chaja-21ff77.netlify.app/",
@@ -32,7 +32,8 @@ export const projectsArray = [
   {
     id: 4,
     Name: "Weather App",
-    Description: "Weather app created using React and Weather API.",
+    Description:
+      "Weather app created using React and Weather API. Fetches Real time Weather Data",
     imageSrc: "/public/assets/Projectimages/WeatherApp.png",
     Technologies: ["React", "API"],
     LinkGit: "https://mohammadharish52.github.io/weather-app/",
