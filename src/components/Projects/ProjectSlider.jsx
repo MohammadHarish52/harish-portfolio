@@ -7,6 +7,7 @@ const ProjectSlider = () => {
 
   const handleMouseEnter = (project) => {
     setSelectedProject(project);
+
     setShowModal(true);
   };
 
@@ -16,11 +17,7 @@ const ProjectSlider = () => {
 
   return (
     <div className="project bg-[#fffefe] p-4">
-      <h2 className="font-thin mt-[24px] tracking-widest">MY PROJECTS</h2>
-      <h1 className="text-[#232322] text-[2.25rem] md:text-[3rem] mt-[24px] font-bold">
-        Showcasing My Creative Journey
-      </h1>
-      <div className="myProject grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 mt-[24px] ">
+      <div className="myProject grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-4 mt-[24px] ">
         {projectsArray.map((project) => (
           <div
             className="card bg-[#dbdbdb] p-4 rounded-md shadow-xl relative "
@@ -66,12 +63,8 @@ const ProjectSlider = () => {
               </div>
             </div>
             {showModal && selectedProject === project && (
-              <div className="absolute top-0 left-0 w-full h-full bg-gray-900  bg-opacity-50 flex justify-center items-center">
+              <div className="absolute top-0 left-0 w-full h-full bg-gray-900  bg-opacity-70 flex justify-center items-center">
                 <div className="bg-blur text-[#eeefee]  rounded-lg p-4 h-[100%] text-left flex flex-col justify-center items-start">
-                  <h2 className="text-2xl font-semibold mb-2">
-                    {project.Name}
-                  </h2>
-                  <p className="text-gray-700 mb-4">{project.Description}</p>
                   <div className="flex justify-center">
                     <a
                       href={project.LinkGit}

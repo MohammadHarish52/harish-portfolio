@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Layout from "./Layout";
 import CalltoAction from "./Calltoaction/CalltoAction";
 import Footer from "./contact/Footer";
+import Dummy from "./Projects/Dummy";
 
 const Home = () => {
   const [color, setColor] = useState(true);
@@ -43,6 +44,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Dummy />
       <CalltoAction />
       <Footer />
     </Layout>

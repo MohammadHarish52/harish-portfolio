@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-gray-100 text-gray-700 mt-16 mx-16">
-      <div className="containerfooter mx-auto flex justify-around">
+      <div className="containerfooter mx-auto flex justify-around md:flex-row flex-col">
         <div className="individuals text-left">
           <h1 className="text-2xl font-light mb-4">Contact Information</h1>
           <p className="text-gray-500 mb-2">

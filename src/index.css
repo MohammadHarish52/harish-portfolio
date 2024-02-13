@@ -30,3 +30,14 @@
   margin-top: 100px;
   padding: 80px 50px 50px;
 }
+.glassmorph {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid hsla(0, 0%, 100%, 0.18);
+  transition-duration: 0.2s;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}

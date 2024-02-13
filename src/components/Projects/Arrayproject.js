@@ -2,19 +2,19 @@ export const projectsArray = [
   {
     id: 1,
     Name: "Aesop UI-clone",
-    Description:
-      "This is a clone of the Aesop website Landing Page, created within 4 days using React and Tailwind.",
+    Description: "Clone Homepage of Aesop",
     imageSrc: "/public/assets/Projectimages/Aesop.png",
     Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript"],
+    bgimage: "/public/assets/Projectimages/Aesopbg.png",
     LinkGit: "https://timely-chaja-21ff77.netlify.app/",
     code: "https://github.com/MohammadHarish52/Aesop",
   },
   {
     id: 2,
     Name: "Movie-Ticket-App",
-    Description:
-      "This is a clone of the Amazon website. Created using HTML, CSS, and JavaScript.",
+    Description: "Dummy Movie ticket Booking",
     imageSrc: "/public/assets/Projectimages/Movie-App.png",
+    bgimage: "/public/assets/Projectimages/moviebg.png",
     Technologies: ["HTML", "CSS", "JavaScript"],
     LinkGit: "https://two-screen-vxt7.vercel.app/",
     code: "https://github.com/MohammadHarish52/Two-screen",
@@ -22,9 +22,9 @@ export const projectsArray = [
   {
     id: 3,
     Name: "Amazon Clone",
-    Description:
-      "This is a clone of the Amazon website. Created using HTML, CSS, and JavaScript.",
+    Description: "Clone Homepage of Amazon",
     imageSrc: "/public/assets/Projectimages/Amazon.png",
+    bgimage: "/public/assets/Projectimages/amazonbg.png",
     Technologies: ["HTML", "CSS", "JavaScript"],
     LinkGit: "https://mohammadharish52.github.io/amazoncloneui/",
     code: "https://github.com/MohammadHarish52/amazoncloneui/tree/main",
@@ -32,9 +32,9 @@ export const projectsArray = [
   {
     id: 4,
     Name: "Weather App",
-    Description:
-      "Weather app created using React and Weather API. Fetches Real time Weather Data",
+    Description: "Simple weather App",
     imageSrc: "/public/assets/Projectimages/WeatherApp.png",
+    bgimage: "/public/assets/Projectimages/weatherbg.png",
     Technologies: ["React", "API"],
     LinkGit: "https://mohammadharish52.github.io/weather-app/",
     code: "https://github.com/MohammadHarish52/weather-app",
@@ -42,28 +42,29 @@ export const projectsArray = [
   {
     id: 5,
     Name: "Random Color Generator",
-    Description:
-      "Random color generator created using HTML, CSS, and JavaScript.",
-    imageSrc: "/public/assets/Projectimages/ColorGenerator.png",
+    Description: "Fun Random color generator",
+    imageSrc: "/public/assets/Projectimages/colorGenerator.png",
+    bgimage: "/public/assets/Projectimages/colorbg.png",
     Technologies: ["HTML", "CSS", "JavaScript"],
     LinkGit: "https://github.com/MohammadHarish52/color-generator",
     code: "https://github.com/MohammadHarish52/color-generator",
   },
   {
     id: 6,
-    Name: "Currency Converter",
-    Description: "Currency converter using HTML, CSS, JavaScript, and API.",
+    Name: "currency converter",
+    Description: "A simple currency converter",
     imageSrc: "/public/assets/Projectimages/CurrencyConverter.png",
+    bgimage: "/public/assets/Projectimages/convertbg.png",
     Technologies: ["HTML", "CSS", "JavaScript", "API"],
     LinkGit: "https://github.com/MohammadHarish52/currency-converter",
     code: "https://github.com/MohammadHarish52/currency-converter",
   },
   {
     id: 7,
-    Name: "To-Do List",
-    Description:
-      "To-Do List application created using HTML, CSS, and JavaScript.",
+    Name: " Simple To-Do List",
+    Description: " A  Simple To-Do List",
     imageSrc: "/public/assets/Projectimages/tdl.png",
+    bgimage: "/public/assets/Projectimages/tdlbg.png",
     Technologies: ["HTML", "CSS", "JavaScript"],
     LinkGit: "https://github.com/MohammadHarish52/todo-list",
     code: "https://github.com/MohammadHarish52/todo-list",
@@ -74,6 +75,7 @@ export const projectsArray = [
     Description:
       "Rock Paper Scissors game created using HTML, CSS, and JavaScript.",
     imageSrc: "/public/assets/Projectimages/RockPaperScissors.png",
+    bgimage: "/public/assets/Projectimages/rpsbg.png",
     Technologies: ["HTML", "CSS", "JavaScript"],
     LinkGit: "https://github.com/MohammadHarish52/rock-paper-scissors",
     code: "https://github.com/MohammadHarish52/rock-paper-scissors",

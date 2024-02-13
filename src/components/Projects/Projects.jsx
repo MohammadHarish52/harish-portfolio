@@ -1,9 +1,11 @@
+import Dummy from "./Dummy";
 import ProjectSlider from "./ProjectSlider";
 
 const Projects = () => {
   return (
     <div>
-      <ProjectSlider />
+      {/* <ProjectSlider /> */}
+      <Dummy />
     </div>
   );
 };
