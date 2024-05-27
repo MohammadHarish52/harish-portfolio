@@ -1,4 +1,3 @@
-import React from "react";
 import { projectsArray } from "./Arrayproject";
 
 const Dummy = () => {
@@ -7,7 +6,7 @@ const Dummy = () => {
       <h2 className="font-thin mt-[24px] tracking-[5px]">MY PROJECTS</h2>
       <div className="project_look flex justify-around items-center">
         <span className="md:w-[300px] w-[150px] border-b-[#232222] border-b-[3px] "></span>
-        <h1 className="text-[#232322] text-[2.25rem] md:text-[3rem]  font-bold">
+        <h1 className="text-[#232322] text-[2.25rem] md:text-[3rem]  font-[800]">
           Have a Look at My Work
         </h1>
         <span className="md:w-[300px] w-[150px] border-b-[#232322] border-b-[3px] "></span>

@@ -52,7 +52,7 @@ const skillsData = [
 const Skills = () => {
   return (
     <Layout>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-16 min-h-screen bg-gray-100">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-16 min-h-screen bg-white">
         {skillsData.map((skill, index) => (
           <div
             key={index}
@@ -61,11 +61,13 @@ const Skills = () => {
               backgroundColor: "white",
             }}
           >
-            <div className="mb-4">{skill.src}</div>
-            <h1 className="text-2xl font-thin mb-2">{skill.name}</h1>
+            <div className="mb-4 text-[#232222]">{skill.src}</div>
+            <h1 className="text-2xl font-thin mb-2 text-[#232222]">
+              {skill.name}
+            </h1>
             <div className="stars-model">
               {[...Array(skill.stars)].map((star, i) => (
-                <span key={i} className="text-gray-900 text-2xl">
+                <span key={i} className="text-[#232222] text-2xl">
                   &#9733;
                 </span>
               ))}
