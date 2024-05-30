@@ -51,31 +51,29 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <Layout>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-16 min-h-screen bg-white">
-        {skillsData.map((skill, index) => (
-          <div
-            key={index}
-            className="p-6 border rounded-md shadow-md hover:bg-slate-400 transition-transform duration-300 ease-in-out transform hover:scale-105"
-            style={{
-              backgroundColor: "white",
-            }}
-          >
-            <div className="mb-4 text-[#232222]">{skill.src}</div>
-            <h1 className="text-2xl font-thin mb-2 text-[#232222]">
-              {skill.name}
-            </h1>
-            <div className="stars-model">
-              {[...Array(skill.stars)].map((star, i) => (
-                <span key={i} className="text-[#232222] text-2xl">
-                  &#9733;
-                </span>
-              ))}
-            </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-16 min-h-screen bg-white">
+      {skillsData.map((skill, index) => (
+        <div
+          key={index}
+          className="p-6 border rounded-md shadow-md hover:bg-slate-400 transition-transform duration-300 ease-in-out transform hover:scale-105"
+          style={{
+            backgroundColor: "white",
+          }}
+        >
+          <div className="mb-4 text-[#232222]">{skill.src}</div>
+          <h1 className="text-2xl font-thin mb-2 text-[#232222]">
+            {skill.name}
+          </h1>
+          <div className="stars-model">
+            {[...Array(skill.stars)].map((star, i) => (
+              <span key={i} className="text-[#232222] text-2xl">
+                &#9733;
+              </span>
+            ))}
           </div>
-        ))}
-      </div>
-    </Layout>
+        </div>
+      ))}
+    </div>
   );
 };
 
