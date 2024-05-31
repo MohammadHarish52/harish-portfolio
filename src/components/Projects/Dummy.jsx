@@ -1,15 +1,27 @@
 import { projectsArray } from "./Arrayproject";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Dummy = () => {
+  useGSAP(() => {
+    gsap.from(".line ", {
+      duration: 3,
+      x: -400,
+      repeat: -1,
+      ease: "power1.inOut",
+      yoyo: true,
+    });
+  }, []);
   return (
-    <div className="my-[64px]">
-      <h2 className="font-thin mt-[24px] tracking-[5px]">MY PROJECTS</h2>
-      <div className="project_look flex justify-around items-center">
-        <span className="md:w-[300px] w-[150px] border-b-[#232222] border-b-[3px] "></span>
-        <h1 className="text-[#232322] text-[2.25rem] md:text-[3rem]  font-[800]">
+    <div className="my-[64px] ">
+      <h2 className="font-bold mt-[24px]  text-[2.25rem]  text-left px-16">
+        MY PROJECTS
+      </h2>
+      <div className="project_look flex justify-between px-16 items-center">
+        <h1 className="text-[#232322] text-left   text-[2.25rem] tracking-[5px]   font-thin">
           Have a Look at My Work
         </h1>
-        <span className="md:w-[300px] w-[150px] border-b-[#232322] border-b-[3px] "></span>
+        <span className=" w-[450px] line bg-black  border-black border-[2px] "></span>
       </div>
       <div className="pr flex items-center justify-center gap-10 flex-wrap bg-white mt-[100px]">
         {projectsArray.map((project) => (
