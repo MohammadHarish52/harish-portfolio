@@ -23,6 +23,11 @@ const Logo = () => {
       duration: 1,
       ease: "power1.inOut",
     });
+    gsap.to(".name", {
+      ease: "power1.inOut",
+      opacity: 1,
+      y: 0,
+    });
   }, []);
   return (
     <div>
@@ -33,7 +38,7 @@ const Logo = () => {
           <div className="circle circleup flex justify-center items-center"></div>
         </div>
         <div className="Details flex flex-col items-start">
-          <h1 className="text-2xl leading-none tracking-wider font-bold">
+          <h1 className="text-2xl leading-none tracking-wider   font-bold">
             Mohammad Harish
           </h1>
           <h2 className="text-2xl font-thin ">Frontend Developer</h2>

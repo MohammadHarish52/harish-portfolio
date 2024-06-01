@@ -10,6 +10,22 @@
   --color-accent: #7fc7d9;
   --color-background: #dcf2f1;
 }
+/* App.css */
+body {
+  cursor: none; /* Hide the default cursor */
+}
+
+.custom-cursor {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
 * {
   margin: 0;
   padding: 0;
