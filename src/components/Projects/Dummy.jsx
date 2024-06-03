@@ -23,7 +23,7 @@ const Dummy = () => {
         </h1>
         <span className=" w-[450px] line bg-black  border-black border-[2px] "></span>
       </div>
-      <div className="pr flex items-center justify-center gap-10 flex-wrap bg-white py-4">
+      <div className="pr flex items-center justify-center gap-10 flex-wrap bg-white py-0 sm:py-4">
         {projectsArray.map((project) => (
           <div
             key={project.id}
@@ -49,7 +49,7 @@ const Dummy = () => {
                 <div className="text-1xl font-medium text-[#232222]">
                   {project.Name}
                 </div>
-                <a target="_blank" href="https://hypedrop.netlify.app">
+                <a target="_blank" href={project.LinkGit}>
                   <div className="cursor-pointer hover:text-[#fffefe] text-[#fffefe] duration-200 flex flex-row items-center gap-2 bg-[#232222] group-hover:bg-[#1e97dd] text-[12px] px-[10px] py-[4px] rounded-[4px] font-medium">
                     <div>Link</div>
                   </div>

@@ -56,7 +56,7 @@ export const projectsArray = [
     imageSrc: "/public/assets/Projectimages/CurrencyConverter.png",
     bgimage: "/public/assets/Projectimages/currency.png",
     Technologies: ["HTML", "CSS", "JavaScript", "API"],
-    LinkGit: "https://github.com/MohammadHarish52/currency-converter",
+    LinkGit: "https://mohammadharish52.github.io/Currency-converter/",
     code: "https://github.com/MohammadHarish52/currency-converter",
   },
   {

@@ -25,11 +25,19 @@ const HeadLine = () => {
         >
           FRONTEND DEVELOPER
         </h1>
-        <p className="text-[22px] sm:text-[40px]  font-[500] text-left leading-[48px]">
+        <p className="text-[22px] sm:text-[40px]  font-[500] text-left leading-[48px] pb-[40px]">
           As a front-end developer,
           <br /> I create dynamic and responsive web interfaces <br />
           that help businesses around the world grow.
         </p>
+
+        <a
+          href="#contact"
+          className="text-[18px]absolute
+            font-[100] text-left leading-[48px] border-black border-2 px-[35px] rounded-md hover:text-white hover:bg-black duration-500"
+        >
+          xharish52@gmail.com
+        </a>
       </div>
     </div>
   );
