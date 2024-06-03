@@ -16,11 +16,11 @@ body {
 }
 
 .custom-cursor {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
 
-  border: 1px solid rgba(0, 0, 0, 0.7);
+  border: 2px solid #000;
   position: fixed;
   pointer-events: none;
   transform: translate(-50%, -50%);

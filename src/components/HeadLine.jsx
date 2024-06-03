@@ -11,8 +11,8 @@ const HeadLine = () => {
     });
   }, []);
   return (
-    <div className="flex flex-col px-16 py-4 items-start ">
-      <div className="flex flex-col items-start justify-start leading-[96px] sm:leading-0 ">
+    <div className="flex flex-col px-2 py-2 sm:px-16 sm:py-2  items-start ">
+      <div className="flex flex-col items-start justify-start leading-0 sm:leading-[96px] ">
         <h1
           className="text-[39px] name opacity-0 sm:text-[71px] md:text-[102px] font-[700] text-left"
           style={{ transform: "translateY(-100px)" }}
@@ -27,9 +27,8 @@ const HeadLine = () => {
         </h1>
         <p className="text-[22px] sm:text-[40px]  font-[500] text-left leading-[48px]">
           As a front-end developer,
-          <br /> I create dynamic and responsive web interfaces <br /> that help
-          businesses around <br /> the world enhance their online presence and
-          drive growth.
+          <br /> I create dynamic and responsive web interfaces <br />
+          that help businesses around the world grow.
         </p>
       </div>
     </div>

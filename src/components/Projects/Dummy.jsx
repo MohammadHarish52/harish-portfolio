@@ -13,17 +13,17 @@ const Dummy = () => {
     });
   }, []);
   return (
-    <div className="my-[64px] ">
+    <div className=" ">
       <h2 className="font-bold mt-[24px]  text-[2.25rem]  text-left px-16">
         MY PROJECTS
       </h2>
       <div className="project_look flex justify-between px-16 items-center">
-        <h1 className="text-[#232322] text-left   text-[2.25rem] tracking-[5px]   font-thin">
+        <h1 className="text-[#232322] text-left   text-[2.25rem]    font-thin">
           Have a Look at My Work
         </h1>
         <span className=" w-[450px] line bg-black  border-black border-[2px] "></span>
       </div>
-      <div className="pr flex items-center justify-center gap-10 flex-wrap bg-white mt-[100px]">
+      <div className="pr flex items-center justify-center gap-10 flex-wrap bg-white py-4">
         {projectsArray.map((project) => (
           <div
             key={project.id}

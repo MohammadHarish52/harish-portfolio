@@ -6,7 +6,7 @@ import Footer from "./Footer";
 const Contact = () => {
   return (
     <Layout>
-      <div className="contact-me mx-16 mt-16">
+      <div className="contact-me mx-16 py-4 ">
         <h1 className="text-left text-4xl md:text-8xl font-thin mb-8 border-b-2 pb-2 border-black">
           Contact Me
         </h1>

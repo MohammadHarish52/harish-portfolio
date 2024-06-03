@@ -54,7 +54,7 @@ export const projectsArray = [
     Name: "currency converter",
     Description: "A simple currency converter",
     imageSrc: "/public/assets/Projectimages/CurrencyConverter.png",
-    bgimage: "/public/assets/Projectimages/convertbg.png",
+    bgimage: "/public/assets/Projectimages/currency.png",
     Technologies: ["HTML", "CSS", "JavaScript", "API"],
     LinkGit: "https://github.com/MohammadHarish52/currency-converter",
     code: "https://github.com/MohammadHarish52/currency-converter",

@@ -5,7 +5,7 @@ const Logo = () => {
   useGSAP(() => {
     gsap.from(".circledown", {
       x: -20,
-      y: 10,
+      y: 0,
       repeat: -1,
       yoyo: true,
       rotation: 360,
@@ -31,13 +31,13 @@ const Logo = () => {
   }, []);
   return (
     <div>
-      <div className="flex">
-        <div>
+      <div className="flex ">
+        <div className="">
           <div className="circledown circle flex justify-center items-center"></div>
 
           <div className="circle circleup flex justify-center items-center"></div>
         </div>
-        <div className="Details flex flex-col items-start">
+        <div className="Details hidden flex-col items-start sm:flex">
           <h1 className="text-2xl leading-none tracking-wider   font-bold">
             Mohammad Harish
           </h1>
