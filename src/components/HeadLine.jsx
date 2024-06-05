@@ -32,9 +32,9 @@ const HeadLine = () => {
         </p>
 
         <a
-          href="#contact"
+          href="mailto:xharish52@gmail.com"
           className="text-[18px]absolute
-            font-[100] text-left leading-[48px] border-black border-2 px-[35px] rounded-md hover:text-white hover:bg-black duration-500"
+            font-semibold text-left leading-[48px] border-black border-[1px] px-[35px] rounded-md hover:text-white hover:bg-black duration-1000"
         >
           xharish52@gmail.com
         </a>
