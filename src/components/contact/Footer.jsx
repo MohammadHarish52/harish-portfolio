@@ -1,8 +1,11 @@
-import React from "react";
 import Tagline from "../Tagline";
 import { GoArrowUp } from "react-icons/go";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="flex flex-col px-2 py-2 sm:px-16 sm:py-2   ">
       <div className="flex flex-col items-start justify-start leading-0 sm:leading-[96px] ">
@@ -15,7 +18,10 @@ const Footer = () => {
           <a href="https://github.com/MohammadHarish52">Github</a>
           <a href="https://x.com/Mohamma59305726">Twitter</a>
         </div>
-        <div className="back_to_top flex justify-center items-center cursor-pointer">
+        <div
+          className="back_to_top flex justify-center items-center cursor-pointer"
+          onClick={scrollToTop}
+        >
           <h1>Back To Top</h1>
           <GoArrowUp />
         </div>

@@ -38,7 +38,7 @@ const Logo = () => {
           <div className="circle circleup flex justify-center items-center"></div>
         </div>
         <div className="Details hidden flex-col items-start sm:flex">
-          <h1 className="text-2xl leading-none tracking-wider   font-bold">
+          <h1 className="text-2xl leading-none tracking-[-1.3px]   font-bold">
             Mohammad Harish
           </h1>
           <h2 className="text-2xl font-thin ">Frontend Developer</h2>
