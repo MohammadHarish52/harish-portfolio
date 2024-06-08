@@ -1,15 +1,16 @@
 import { FaGithub, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Layout from "../Layout";
-import Footer from "./Footer";
+import Tagline from "../Tagline";
 
 const Contact = () => {
   return (
     <Layout>
       <div className="contact-me px-2 py-2 sm:px-16 sm:py-2 ">
-        <h1 className="text-left text-4xl md:text-8xl font-bold mb-8 border-b-2 pb-2 border-black">
-          CONTACT ME
-        </h1>
+        <div className="flex flex-col items-start justify-start leading-0 sm:leading-[96px] ">
+          <Tagline heading="CONNECT" subheading="SHARE AND GROW" />
+        </div>
+
         <div className="socials">
           <a
             href="https://www.linkedin.com/in/mohammad-harish52/"
