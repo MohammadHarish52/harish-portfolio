@@ -21,7 +21,6 @@ const Home = () => {
       <Dummy />
       <Skills />
       <CalltoAction />
-      <Footer />
     </Layout>
   );
 };

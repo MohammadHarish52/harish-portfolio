@@ -1,78 +1,27 @@
-import { FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaMailBulk } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import React from "react";
+import Tagline from "../Tagline";
+import { GoArrowUp } from "react-icons/go";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-100 text-gray-700 mt-16 mx-16">
-      <div className="containerfooter mx-auto flex justify-around md:flex-row flex-col">
-        <div className="individuals text-left">
-          <h1 className="text-2xl font-light mb-4">Contact Information</h1>
-          <p className="text-gray-500 mb-2">
-            Feel free to reach me through my email
-            <br />
-            and phone number
-          </p>
-          <h2 className="text-gray-500">
-            {" "}
-            <FaMailBulk />
-            Email: xharish52@gmail.com
-          </h2>
-          <h2 className="text-gray-500">
-            <FaPhone />
-            Phone: +91 6386148537
-          </h2>
-        </div>
-        <div className="individuals">
-          <h1 className="text-2xl font-light mb-4">Portfolio Menu</h1>
-          <ul className="flex flex-col text-left text-gray-500">
-            <Link to="/">Home</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/skills">Expertise</Link>
-            <Link to="/about">About me</Link>
-            <Link to="/contacts">Contact</Link>
-          </ul>
-        </div>
-        <div className="individuals">
-          <h1 className="text-2xl font-light mb-4">Catch Me Up On</h1>
-          <a
-            href="https://www.linkedin.com/in/mohammad-harish52/"
-            className="text-gray-500 flex items-center mb-2"
-          >
-            <FaLinkedin className="mr-2 text-gray-700" /> Linkedin
-          </a>
-          <a
-            href="https://twitter.com/Mohamma59305726"
-            className="text-gray-500 flex items-center mb-2"
-          >
-            <FaXTwitter className="mr-2  text-gray-700" /> Twitter
-          </a>
-          <a
-            href="https://github.com/MohammadHarish52"
-            className="text-gray-500 flex items-center mb-2"
-          >
-            <FaGithub className="mr-2 text-gray-700" /> Github
-          </a>
-          <a
-            href="https://www.instagram.com/hd0haha_/"
-            className="text-gray-500 flex items-center"
-          >
-            <FaInstagramSquare className="mr-2 text-gray-700" /> Instagram
-          </a>
-        </div>
+    <div className="flex flex-col px-2 py-2 sm:px-16 sm:py-2   ">
+      <div className="flex flex-col items-start justify-start leading-0 sm:leading-[96px] ">
+        <Tagline heading="MOHAMMAD HARISH" subheading="FRONTEND DEVELOPER" />
       </div>
-
-      {/* Copyright */}
-      <div className="text-center mt-8 mb-8 py-8">
-        <p className="text-gray-400">
-          Copyright &copy; 2024{" "}
-          <b className="text-gray-500 font-light"> | Mohammad Harish | </b>
-          All rights reserved.
-        </p>
+      <div className="flex justify-between items-center text-[18px] font-[500] pb-[70px]">
+        <div className="contacts flex gap-8 text-[18px] font-[500] ">
+          <a href="https://www.instagram.com/hd0haha_/">Instagram</a>
+          <a href="https://www.linkedin.com/in/mohammad-harish52/">Linkedin</a>
+          <a href="https://github.com/MohammadHarish52">Github</a>
+          <a href="https://x.com/Mohamma59305726">Twitter</a>
+        </div>
+        <div className="back_to_top flex justify-center items-center cursor-pointer">
+          <h1>Back To Top</h1>
+          <GoArrowUp />
+        </div>
+        <div className="copyright">
+          <h1>Copyright&copy;MohammadHarish</h1>
+        </div>
       </div>
     </div>
   );

@@ -14,11 +14,11 @@ const Dummy = () => {
   }, []);
   return (
     <div className=" ">
-      <h2 className="font-bold mt-[24px]  text-[2.25rem]  text-left px-16">
+      <h2 className="font-bold mt-[24px]  text-[2.25rem] tracking-[-1.3px] text-left px-16">
         MY PROJECTS
       </h2>
       <div className="project_look flex justify-between px-16 items-center">
-        <h1 className="text-[#232322] text-left   text-[2.25rem]    font-thin">
+        <h1 className="text-[#232322] text-left   text-[2.25rem] tracking-[-1.3px]   font-thin">
           Have a Look at My Work
         </h1>
         <span className=" w-[450px] line bg-black  border-black border-[2px] "></span>
