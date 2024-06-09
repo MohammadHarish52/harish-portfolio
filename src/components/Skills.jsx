@@ -99,7 +99,7 @@ const Skills = () => {
       </div>
       {skillsData.map((skill) => (
         <div
-          className="flex justify-between sm:justify-start   py-[65px] border-t border-[#d6d6d6] items-center gap-0  sm:gap-[100px] w-[100%] h-auto sm:h-[290px]"
+          className="flex justify-between sm:justify-start  py-[65px]  border-t border-[#d6d6d6] items-center gap-0  sm:gap-[100px] w-[100%] h-auto "
           key={skill.name}
         >
           <div className="text-left hidden sm:block">
