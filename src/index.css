@@ -101,3 +101,11 @@ img {
   height: 150px;
   border-radius: 50%;
 }
+.hover-image {
+  filter: grayscale(100%);
+  transition: filter 0.9s ease;
+}
+
+.hover-image:hover {
+  filter: grayscale(0%);
+}

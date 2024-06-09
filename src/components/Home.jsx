@@ -1,26 +1,21 @@
-import { useEffect, useState } from "react";
 import Layout from "./Layout";
-import CalltoAction from "./Calltoaction/CalltoAction";
-import Footer from "./contact/Footer";
-import Dummy from "./Projects/Dummy";
-import Skills from "./Skills";
 import HeadLine from "./HeadLine";
+import BottomTagline from "./BottomTagline";
 
 const Home = () => {
-  const [color, setColor] = useState(true);
-
-  useEffect(() => {
-    setInterval(() => {
-      setColor((e) => !e);
-    }, 2000);
-  }, []);
-
   return (
     <Layout>
       <HeadLine />
-      <Dummy />
-      <Skills />
-      <CalltoAction />
+      <div className="flex flex-col px-2 py-2 sm:px-16 sm:py-2  items-start ">
+        <BottomTagline
+          paraone="Looking to grow your startup through
+           "
+          paraoneone=" the power of clear code  design?"
+          paratwo="Reach out to get the conversation
+           "
+          paratwotwo="started about your digital design needs."
+        />
+      </div>
     </Layout>
   );
 };
