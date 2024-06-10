@@ -99,15 +99,17 @@ const Skills = () => {
       </div>
       {skillsData.map((skill) => (
         <div
-          className="flex justify-between sm:justify-start  py-[65px]  border-t border-[#d6d6d6] items-center gap-0  sm:gap-[100px] w-[100%] h-auto "
+          className="flex justify-between sm:justify-between  items-start  py-[65px]  border-t border-[#d6d6d6]  gap-0  sm:gap-[100px] w-[100%] h-auto "
           key={skill.name}
         >
           <div className="text-left hidden sm:block">
-            <h1 className="text-[18px] grow">{skill.src}</h1>
+            <h1 className="text-[18px] font-[500] tracking[.-5px] ">
+              (00{skill.id})
+            </h1>
           </div>
           <div className="text-left">
             <h1 className="font-500 text-[31px] grow sm:text-[35px] tracking-[-1.3px]">
-              {skill.name}
+              {skill.src}
             </h1>
           </div>
           <div className="text-left">
@@ -115,6 +117,7 @@ const Skills = () => {
               <Rating rating={skill.stars} />
             </h1>
           </div>
+          <div className="hidden sm:block"></div>
         </div>
       ))}
     </div>

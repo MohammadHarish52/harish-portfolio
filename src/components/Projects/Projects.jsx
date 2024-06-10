@@ -8,7 +8,7 @@ const Projects = () => {
     <Layout>
       <div className="flex flex-col px-2 py-2 sm:px-16 sm:py-2  items-start ">
         <div className="pb-[60px] sm:pb-[120px]">
-          <div className="flex flex-col items-center sm:items-start justify-start leading-0 sm:leading-[96px] ">
+          <div className="flex flex-col items-start justify-start leading-0 sm:leading-[96px] ">
             <Tagline heading="PROJECTS WORK" subheading="(2023 — PRESENT)" />
           </div>
           <p className="text-[22px] sm:text-[40px]  font-[500] text-left sm:leading-[48px] leading-[25px] pb-[40px] sm:tracking-[-1.3px] tracking-[-.8px]">

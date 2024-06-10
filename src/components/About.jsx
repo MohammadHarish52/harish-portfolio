@@ -1,43 +1,21 @@
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Layout from "./Layout";
 import Tagline from "./Tagline";
 import Skills from "./Skills";
 import BottomTagline from "./BottomTagline";
-import { videosrc } from "./constants/video";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import Education from "./Education";
+import { useEffect } from "react";
+import Idoltime from "./Idoltime";
 
 const About = () => {
-  useGSAP(() => {
+  useEffect(() => {
     gsap.to(".name", {
       duration: 1,
       ease: "power1.inOut",
       opacity: 1,
       y: 0,
     });
-    gsap.to(".findme", {
-      opacity: 1,
-      duration: 1.5,
-      ease: "power2.inOut",
-      scrollTrigger: {
-        trigger: ".findme",
-        start: "top 80%", // When the top of the element is 80% from the top of the viewport
-        end: "top 20%", // When the top of the element is 20% from the top of the viewport
-        scrub: true, // Smooth scrubbing effect
-      },
-    });
   }, []);
-
-  const handleMouseEnter = (event) => {
-    event.target.play();
-  };
-
-  const handleMouseLeave = (event) => {
-    event.target.pause();
-    event.target.currentTime = 0; // Optionally reset to start
-  };
 
   return (
     <Layout>
@@ -57,24 +35,10 @@ const About = () => {
           src="/assets/harish.jpg"
           alt="meheh"
         />
+        <Education />
         <Skills />
-        <p className="text-[31px] findme opacity-0 sm:text-[40px] font-[500] text-left sm:leading-[48px] leading-[39px] pb-[40px] sm:tracking-[-1.3px] tracking-[-.8px]">
-          When I’m not at the computer You <br />
-          can find me watching Messi ,binging <br /> one pieace and capturing
-          Nature.
-        </p>
-        <div className="flex flex-wrap flex-col sm:flex-row items-center justify-start gap-4 w-full">
-          {videosrc.map((video) => (
-            <video
-              key={video.id}
-              className="w-full sm:w-auto md:w-1/2 lg:w-[24%] mt-10 rounded-xl"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <source src={video.src} type="video/mp4" />
-            </video>
-          ))}
-        </div>
+        <Idoltime />
+
         <BottomTagline
           paraone="Looking to grow your startup through
            "
