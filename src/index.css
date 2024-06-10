@@ -13,6 +13,7 @@
 /* App.css */
 body {
   cursor: none; /* Hide the default cursor */
+  background-color: #fefeff;
 }
 
 .custom-cursor {
