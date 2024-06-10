@@ -34,7 +34,7 @@ export const projectsArray = [
     Name: "Weather App",
     Description: "Simple weather App",
     imageSrc: "/assets/WeatherApp.png",
-    bgimage: "/assets/weatherbg.png",
+    bgimage: "/assets/Weatherbg.png",
     Technologies: ["React", "API"],
     LinkGit: "https://mohammadharish52.github.io/weather-app/",
     code: "https://github.com/MohammadHarish52/weather-app",
