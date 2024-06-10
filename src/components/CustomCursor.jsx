@@ -19,7 +19,7 @@ const CustomCursor = () => {
 
   return (
     <div
-      className="custom-cursor"
+      className="custom-cursor hidden lg:block"
       style={{ left: `${position.x}px`, top: `${position.y}px` }}
     ></div>
   );

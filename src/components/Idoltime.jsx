@@ -40,7 +40,7 @@ const Idoltime = () => {
           </h1>
           <p className="text-[31px] findme opacity-0 sm:text-[40px] font-[500] text-left sm:leading-[48px] leading-[39px] pb-[80px] sm:tracking-[-1.3px] tracking-[-.8px]">
             When I’m not at the computer You <br />
-            can find me watching Messi ,binging <br /> one pieace and capturing
+            can find me watching Messi ,binging <br /> one piece and capturing
             Nature.
           </p>
           <div></div>

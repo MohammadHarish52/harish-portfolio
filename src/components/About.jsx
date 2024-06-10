@@ -25,7 +25,7 @@ const About = () => {
           <p className="text-[22px] sm:text-[40px]  font-[500] text-left sm:leading-[48px] leading-[25px] pb-[40px] sm:tracking-[-1.3px] tracking-[-.8px]">
             Discover my approach, process, and
             <br />
-            and services in frontend development. <br />
+            services in frontend development. <br />
             Also, check out some of my <br />
             favourite anime recommendations
           </p>
