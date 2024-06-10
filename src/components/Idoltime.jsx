@@ -49,6 +49,7 @@ const Idoltime = () => {
         <div className="flex flex-wrap flex-col sm:flex-row items-center justify-start gap-4 w-full">
           {videosrc.map((video) => (
             <video
+              muted
               key={video.id}
               className="w-full sm:w-auto  lg:w-[24%] mt-10 rounded-xl"
               onMouseEnter={handleMouseEnter}
