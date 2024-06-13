@@ -19,7 +19,7 @@ const About = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col px-2 py-2 sm:px-16 sm:py-2  items-start ">
+      <div className="flex flex-col   items-start ">
         <div className="flex flex-col items-start justify-start leading-0 sm:leading-[96px] pb-[70px] sm:pb-[120px]">
           <Tagline heading="IMAGINE" subheading="DESIGN AND CODE" />
           <p className="text-[22px] sm:text-[40px]  font-[500] text-left sm:leading-[48px] leading-[25px] pb-[40px] sm:tracking-[-1.3px] tracking-[-.8px]">

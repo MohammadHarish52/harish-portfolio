@@ -1,9 +1,11 @@
 // CustomCursor.js
 
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { LightContext } from "./LightContext";
 
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
+  const { light, setLight } = useContext(LightContext);
 
   useEffect(() => {
     const handleMouseMove = (event) => {
@@ -19,7 +21,9 @@ const CustomCursor = () => {
 
   return (
     <div
-      className="custom-cursor hidden lg:block"
+      className={` ${
+        light ? "custom-cursor-dark" : "custom-cursor"
+      } hidden lg:block`}
       style={{ left: `${position.x}px`, top: `${position.y}px` }}
     ></div>
   );

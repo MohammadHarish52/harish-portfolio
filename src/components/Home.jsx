@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Layout>
       <HeadLine />
-      <div className="flex flex-col px-2 py-2 sm:px-16 sm:py-2  items-start ">
+      <div className="flex flex-col   items-start ">
         <HomeProjects />
         <Devline />
         <HomeBelowProjetcs />

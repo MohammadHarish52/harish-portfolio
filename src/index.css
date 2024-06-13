@@ -13,7 +13,14 @@
 /* App.css */
 body {
   cursor: none; /* Hide the default cursor */
-  background-color: #fefeff;
+}
+.light {
+  background-color: #000b07;
+  color: #fff5e1;
+}
+.day {
+  background-color: #fff5e1;
+  color: #000b07;
 }
 
 .custom-cursor {
@@ -21,6 +28,16 @@ body {
   height: 36px;
   border-radius: 50%;
   border: 2px solid #000;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+.custom-cursor-dark {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #fff5e1;
   position: fixed;
   pointer-events: none;
   transform: translate(-50%, -50%);
@@ -68,6 +85,13 @@ img {
   height: 25px;
   width: 25px;
   border: 1px solid #000;
+  margin-right: 4px;
+}
+.circle-dark {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #fff5e1;
   margin-right: 4px;
 }
 .image-container {

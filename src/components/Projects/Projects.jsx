@@ -6,7 +6,7 @@ import Project from "./Project.jsx";
 const Projects = () => {
   return (
     <Layout>
-      <div className="flex flex-col px-2 py-2 sm:px-16 sm:py-2  items-start ">
+      <div className="flex flex-col w-[100%]  items-start ">
         <div className="pb-[60px] sm:pb-[120px]">
           <div className="flex flex-col items-start justify-start leading-0 sm:leading-[96px] ">
             <Tagline heading="PROJECTS WORK" subheading="(2023 — PRESENT)" />
