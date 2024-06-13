@@ -4,7 +4,7 @@ import { createContext, useState } from "react";
 export const LightContext = createContext();
 
 export const LightProvider = ({ children }) => {
-  const [light, setLight] = useState(true);
+  const [light, setLight] = useState(false);
 
   return (
     <LightContext.Provider value={{ light, setLight }}>
