@@ -1,11 +1,13 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { LightContext } from "./LightContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const BottomTagline = (props) => {
+  const { light, setLight } = useContext(LightContext);
   useEffect(() => {
     gsap.to(".bottom", {
       opacity: 1,
@@ -34,8 +36,12 @@ const BottomTagline = (props) => {
 
         <a
           href="mailto:xharish52@gmail.com"
-          className="text-[18px]
-            font-semibold text-left leading-[48px] border-black border-[1px] px-[35px] rounded-full hover:text-white hover:bg-black duration-1000"
+          className={`text-[18px] ${
+            light ? "border-[#fff5e1]" : "border-[#000]"
+          } border-[1px] px-[35px] rounded-full ${
+            light ? "hover:text-[#000]" : "hover:text-[#fff5e1]"
+          } ${light ? "hover:bg-[#fff5e1]" : "hover:bg-[#000]"} 
+            font-semibold text-left leading-[48px] duration-1000`}
         >
           xharish52@gmail.com
         </a>

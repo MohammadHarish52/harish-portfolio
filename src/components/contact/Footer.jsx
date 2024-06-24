@@ -31,7 +31,7 @@ const Footer = () => {
           <GoArrowUp />
         </div>
         <div className="copyright">
-          <h1>Copyright&copy;MohammadHarish</h1>
+          <h1>Copyright &copy; Mohammad Harish</h1>
         </div>
       </div>
     </div>

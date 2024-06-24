@@ -1,6 +1,5 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import Layout from "./Layout";
 
 const Tagline = (props) => {
   useGSAP(() => {

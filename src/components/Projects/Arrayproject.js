@@ -1,6 +1,16 @@
 export const projectsArray = [
   {
     id: 1,
+    Name: "TachShop",
+    Description: "Ecommerce Mern website",
+    imageSrc: "/assets/tachshop.png",
+    Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript", "GSAP"],
+    bgimage: "/assets/tachshop.png",
+    LinkGit: "https://tachshop.onrender.com/",
+    code: "https://github.com/MohammadHarish52/Tachshop",
+  },
+  {
+    id: 2,
     Name: "Aesop Ui",
     Description: "Clone Homepage of Aesop",
     imageSrc: "/assets/Aesop.png",
@@ -10,7 +20,7 @@ export const projectsArray = [
     code: "https://github.com/MohammadHarish52/Aesop",
   },
   {
-    id: 2,
+    id: 3,
     Name: "Movie Ticket App",
     Description: "Dummy Movie ticket Booking",
     imageSrc: "/assets/Movie-App.png",
@@ -20,7 +30,7 @@ export const projectsArray = [
     code: "https://github.com/MohammadHarish52/Two-screen",
   },
   {
-    id: 3,
+    id: 4,
     Name: "Amazon Clone",
     Description: "Clone Homepage of Amazon",
     imageSrc: "/assets/Amazon.png",
@@ -30,7 +40,7 @@ export const projectsArray = [
     code: "https://github.com/MohammadHarish52/amazoncloneui/tree/main",
   },
   {
-    id: 4,
+    id: 5,
     Name: "Weather App",
     Description: "Simple weather App",
     imageSrc: "/assets/WeatherApp.png",
@@ -40,7 +50,7 @@ export const projectsArray = [
     code: "https://github.com/MohammadHarish52/weather-app",
   },
   {
-    id: 5,
+    id: 6,
     Name: "Meme Generator",
     Description: "Fun Random meme generator",
     imageSrc: "/assets/meme.png",
@@ -50,7 +60,7 @@ export const projectsArray = [
     code: "https://github.com/MohammadHarish52/randommemegenrator",
   },
   {
-    id: 6,
+    id: 7,
     Name: "Currency Convertor",
     Description: "A simple currency converter",
     imageSrc: "/assets/CurrencyConverter.png",
@@ -60,7 +70,7 @@ export const projectsArray = [
     code: "https://github.com/MohammadHarish52/currency-converter",
   },
   {
-    id: 7,
+    id: 8,
     Name: "Snake Snezia",
     Description: "Simple snake game",
     imageSrc: "/assets/tdl.png",
@@ -70,7 +80,7 @@ export const projectsArray = [
     code: "https://github.com/MohammadHarish52/Ex-game",
   },
   {
-    id: 8,
+    id: 9,
     Name: "Flappy Bird",
     Description: "Bring Physics to Web",
     imageSrc: "/assets/RockPaperScissors.png",

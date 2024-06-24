@@ -11,9 +11,10 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useContext } from "react";
 import { ScrollTrigger } from "gsap/all";
 import Rating from "./Rating";
+import { LightContext } from "./LightContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -53,6 +54,8 @@ const skillsData = [
 ];
 
 const Skills = () => {
+  const { light, setLight } = useContext(LightContext);
+
   const h1Ref = useRef(null);
 
   useEffect(() => {
@@ -91,8 +94,12 @@ const Skills = () => {
         </h1>
         <a
           href="mailto:xharish52@gmail.com"
-          className="text-[18px]absolute
-            font-semibold text-left leading-[48px] border-black border-[1px] px-[35px] rounded-full hover:text-white hover:bg-black duration-1000"
+          className={`text-[18px] ${
+            light ? "border-[#fff5e1]" : "border-[#000]"
+          } border-[1px] px-[35px] rounded-full ${
+            light ? "hover:text-[#000]" : "hover:text-[#fff5e1]"
+          } ${light ? "hover:bg-[#fff5e1]" : "hover:bg-[#000]"} 
+            font-semibold text-left leading-[48px] duration-1000`}
         >
           xharish52@gmail.com
         </a>
