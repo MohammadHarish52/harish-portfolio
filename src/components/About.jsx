@@ -6,6 +6,7 @@ import BottomTagline from "./BottomTagline";
 import Education from "./Education";
 import { useEffect } from "react";
 import Idoltime from "./Idoltime";
+import Experince from "./Experience";
 
 const About = () => {
   useEffect(() => {
@@ -35,8 +36,9 @@ const About = () => {
           src="/assets/harish.jpg"
           alt="meheh"
         />
-        <Education />
+        <Experince />
         <Skills />
+        <Education />
         <Idoltime />
 
         <BottomTagline

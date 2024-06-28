@@ -4,7 +4,12 @@ import "/src/index.css"; // Import your Tailwind CSS file
 
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
+import {
+  SiGraphql,
+  SiJavascript,
+  SiMongodb,
+  SiNextdotjs,
+} from "react-icons/si";
 import { FaReact } from "react-icons/fa6";
 import { FaNode } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
@@ -50,6 +55,24 @@ const skillsData = [
     name: "TypeScript",
     src: <SiTypescript className="text-6xl" />,
     stars: 3,
+  },
+  {
+    id: 8,
+    name: "GraphQL",
+    src: <SiGraphql className="text-6xl" />,
+    stars: 2,
+  },
+  {
+    id: 9,
+    name: "MongoDB",
+    src: <SiMongodb className="text-6xl" />,
+    stars: 3,
+  },
+  {
+    id: 10,
+    name: "NextJs",
+    src: <SiNextdotjs className="text-6xl" />,
+    stars: 2,
   },
 ];
 
