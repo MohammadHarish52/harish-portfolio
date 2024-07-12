@@ -56,7 +56,7 @@ export const projectsArray = [
     imageSrc: "/assets/meme.png",
     bgimage: "/assets/meme.png",
     Technologies: ["HTML", "CSS", "JavaScript"],
-    LinkGit: "https://umemes.vercel.app/",
+    LinkGit: "https://mohammadharish52.github.io/randommemegenrator/",
     code: "https://github.com/MohammadHarish52/randommemegenrator",
   },
   {
@@ -86,7 +86,7 @@ export const projectsArray = [
     imageSrc: "/assets/RockPaperScissors.png",
     bgimage: "/assets/flappybird.png",
     Technologies: ["HTML", "CSS", "JavaScript"],
-    LinkGit: "https://flappybird-beta.vercel.app/",
+    LinkGit: "https://flappy-bird-chi-topaz.vercel.app/",
     code: "https://github.com/MohammadHarish52/flop-ball",
   },
   // Add more projects as needed
