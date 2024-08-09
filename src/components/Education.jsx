@@ -2,7 +2,7 @@ import { educationData } from "./constants/Education";
 
 const Education = () => {
   return (
-    <div className="flex justify-between items-start sm:pt-[220px] sm:pb-[290px] pt-[140px] pb-[160px] flex-wrap  gap-[10px] w-[100%]">
+    <div className="flex justify-between items-start sm:pt-[220px] sm:pb-[0px] pt-[140px] pb-[160px] flex-wrap  gap-[10px] w-[100%]">
       <div>
         <h1 className="text-[18px] font-[500] tracking[.-5px] ">(Education)</h1>
       </div>
