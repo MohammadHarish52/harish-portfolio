@@ -1,7 +1,10 @@
 import { GoArrowDown } from "react-icons/go";
 import { projectsArray } from "./Projects/Arrayproject";
+import { useContext } from "react";
+import { LightContext } from "./LightContext";
 
 const HomeProjects = () => {
+  const { light } = useContext(LightContext);
   return (
     <div className="pt-[180px]">
       <div className="font-semibold text-[18px] tracking-[-.5px] flex justify-between py-4">
@@ -17,7 +20,7 @@ const HomeProjects = () => {
             <div className="flex pb-[70px] flex-col " key={project.id}>
               <div className="image-container">
                 <img
-                  src={project.bgimage}
+                  src={light ? project.bgDarkImage : project.bgimage}
                   alt=""
                   className="project-image rounded-3xl border-[0.1px] border-black"
                 />

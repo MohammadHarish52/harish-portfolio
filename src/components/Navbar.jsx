@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { LightContext } from "./LightContext";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
 
