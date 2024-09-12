@@ -7,7 +7,7 @@ const HomeBelowProjetcs = () => {
   return (
     <div className="">
       {projectsArray.map((project, index) => {
-        if (index == 1 || index == 3)
+        if (index == 0 || index == 1)
           return (
             <div className="flex pb-[70px] flex-col " key={project.id}>
               <div className="image-container">

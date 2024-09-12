@@ -15,7 +15,7 @@ const HomeProjects = () => {
         </div>
       </div>
       {projectsArray.map((project, index) => {
-        if (index == 0)
+        if (index == 2)
           return (
             <div className="flex pb-[70px] flex-col " key={project.id}>
               <div className="image-container">
