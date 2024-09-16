@@ -7,33 +7,40 @@ import { MdLightMode, MdDarkMode } from "react-icons/md";
 const Navbar = () => {
   const { light, setLight } = useContext(LightContext);
 
+  const navLinks = [
+    { to: "/", text: "Home" },
+    { to: "/projects", text: "Projects" },
+    { to: "/about", text: "About" },
+  ];
+
   return (
-    <div className="px-2 py-2 sm:px-16 sm:py-2 flex flex-row justify-between items-center text-[18px] h-[100px]">
+    <nav className="px-2 py-2 sm:px-16 sm:py-2 flex flex-row justify-between items-center text-[18px] h-[100px]">
       <Logo />
-      <div className="flex flex-row gap-8  font-[500]">
-        <span className="flex justify-center items-center shadow-sm p-2 rounded-lg">
+      <div className="flex flex-row gap-8 font-[500]">
+        <button
+          onClick={() => setLight(!light)}
+          className="flex justify-center items-center shadow-sm p-2 rounded-lg"
+          aria-label={light ? "Switch to dark mode" : "Switch to light mode"}
+        >
           {light ? (
-            <>
-              <MdLightMode
-                onClick={() => setLight(!light)}
-                className="cursor-pointer text-[18px]"
-              />
-            </>
+            <MdLightMode className="cursor-pointer text-[18px]" />
           ) : (
-            <>
-              {" "}
-              <MdDarkMode
-                onClick={() => setLight(!light)}
-                className="cursor-pointer text-[18px]"
-              />
-            </>
+            <MdDarkMode className="cursor-pointer text-[18px]" />
           )}
-        </span>
-        <Link to="/">Home</Link>
-        <Link to="/projects">Project</Link>
-        <Link to="/about">About</Link>
+        </button>
+        {navLinks.map(({ to, text }) => (
+          <Link key={to} to={to}>
+            <span
+              className={` ${
+                light ? "hover:text-[#E6C2BF]" : "hover:text-gray-500"
+              }`}
+            >
+              {text}
+            </span>
+          </Link>
+        ))}
       </div>
-    </div>
+    </nav>
   );
 };
 
