@@ -26,7 +26,7 @@ export const projectsArray = [
     bgDarkImage: "/assets/twoscreendark.png",
     bgimage: "/assets/moviebg.png",
     Technologies: ["HTML", "CSS", "JavaScript"],
-    LinkGit: "https://two-screen-vxt7.vercel.app/",
+    LinkGit: "https://book-movie-seven.vercel.app/",
     code: "https://github.com/MohammadHarish52/Two-screen",
   },
   {
