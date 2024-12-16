@@ -5,6 +5,7 @@ import Tagline from "../Tagline.jsx";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import FreelanceProject from "./FreelanceProject.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -65,6 +66,14 @@ const Projects = () => {
           </a>
         </div>
         <Project />
+
+        <div className="flex flex-col sm:flex-row justify-between items-center w-[100%] pb-[35px] sm:pb-[73px] mt-[100px]">
+          <h1 className="text-[39px] sm:text-[71px] md:text-[102px] font-[700] text-left tracking-[-4px]">
+            FREELANCE
+          </h1>
+        </div>
+        <FreelanceProject />
+
         <BottomTagline
           paraone="Looking to grow your startup through "
           paraoneone="the power of clear code design?"
