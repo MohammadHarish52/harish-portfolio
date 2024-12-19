@@ -1,24 +1,28 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { LightContext } from "./LightContext";
 import { IoClose } from "react-icons/io5";
 
 const Modal = ({ isOpen, onClose }) => {
   const { light } = useContext(LightContext);
+  const [visible, setVisible] = useState(false);
 
-  if (!isOpen) return null;
+  useEffect(() => {
+    if (isOpen) {
+      setVisible(true);
+    } else {
+      const timer = setTimeout(() => setVisible(false), 1000); // Match the duration with CSS transition
+      return () => clearTimeout(timer);
+    }
+  }, [isOpen]);
 
-  const navLinks = [
-    { to: "/", text: "Home" },
-    { to: "/projects", text: "Projects" },
-    { to: "/about", text: "About" },
-  ];
+  if (!visible) return null;
 
   return (
     <div
-      className={`fixed inset-0 z-50 ${
-        light ? "bg-[#000]/75" : "bg-[#fff]/75"
-      } backdrop-blur-sm transition-all duration-500`}
+      className={`fixed inset-0 z-50 transition-opacity duration-500 ${
+        isOpen ? "opacity-100" : "opacity-0"
+      } ${light ? "bg-[#000]/75" : "bg-[#fff]/75"} backdrop-blur-sm`}
     >
       <div className="h-full flex flex-col p-6">
         {/* Header */}
@@ -35,7 +39,11 @@ const Modal = ({ isOpen, onClose }) => {
 
         {/* Navigation Links */}
         <nav className="flex-1 flex flex-col justify-center">
-          {navLinks.map(({ to, text }) => (
+          {[
+            { to: "/", text: "Home" },
+            { to: "/projects", text: "Projects" },
+            { to: "/about", text: "About" },
+          ].map(({ to, text }) => (
             <Link
               key={to}
               to={to}
