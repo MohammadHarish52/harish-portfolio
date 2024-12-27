@@ -32,7 +32,7 @@ const About = () => {
           </p>
         </div>
         <img
-          className="hover-image rounded-3xl"
+          className="hover-image rounded-3xl "
           src="/assets/harish.jpg"
           alt="meheh"
         />
