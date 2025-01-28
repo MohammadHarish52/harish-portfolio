@@ -62,7 +62,7 @@ const Modal = ({ isOpen, onClose }) => {
         {/* Footer */}
         <div className="py-6">
           <p className="text-lg font-medium opacity-75">
-            © 2024 All rights reserved.
+            © {new Date().getFullYear()} All rights reserved.
           </p>
         </div>
       </div>
