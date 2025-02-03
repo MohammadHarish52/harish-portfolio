@@ -1,6 +1,16 @@
 export const projectsArray = [
   {
     id: 1,
+    Name: "EthSignals",
+    Description: "Ethereum Signals",
+    bgDarkImage: "/assets/tachshopdark.png",
+    Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript", "GSAP"],
+    bgimage: "/assets/tachshop.png",
+    LinkGit: "https://crypto-analysis-phi.vercel.app/",
+    code: "https://github.com/MohammadHarish52/crypto-analysis",
+  },
+  {
+    id: 2,
     Name: "TachShop",
     Description: "Ecommerce Mern website",
     bgDarkImage: "/assets/tachshopdark.png",
@@ -10,7 +20,7 @@ export const projectsArray = [
     code: "https://github.com/MohammadHarish52/Tachshop",
   },
   {
-    id: 2,
+    id: 3,
     Name: "Aesop Ui",
     Description: "Clone Homepage of Aesop",
     bgDarkImage: "/assets/aesopdark.png",
@@ -20,7 +30,7 @@ export const projectsArray = [
     code: "https://github.com/MohammadHarish52/Aesop",
   },
   {
-    id: 3,
+    id: 4,
     Name: "Movie Ticket App",
     Description: "Dummy Movie ticket Booking",
     bgDarkImage: "/assets/twoscreendark.png",
@@ -30,7 +40,7 @@ export const projectsArray = [
     code: "https://github.com/MohammadHarish52/Two-screen",
   },
   {
-    id: 4,
+    id: 5,
     Name: "Banner Assigment ",
     Description: "Assigment for an internship",
     bgDarkImage: "/assets/bannerdark.png",
@@ -40,7 +50,7 @@ export const projectsArray = [
     code: "https://github.com/MohammadHarish52/banner",
   },
   {
-    id: 5,
+    id: 6,
     Name: "Perfectly Scaled",
     Description: "Perfectly Scaled",
     bgDarkImage: "/assets/perfectdark.png",
@@ -50,7 +60,7 @@ export const projectsArray = [
     code: "https://github.com/MohammadHarish52/perfect_scaled",
   },
   {
-    id: 6,
+    id: 7,
     Name: "Meme Generator",
     Description: "Fun Random meme generator",
     bgDarkImage: "/assets/memedark.png",
@@ -61,7 +71,7 @@ export const projectsArray = [
   },
 
   {
-    id: 7,
+    id: 8,
     Name: "Snake Snezia",
     Description: "Simple snake game",
     bgDarkImage: "/assets/snakedark.png",
@@ -71,7 +81,7 @@ export const projectsArray = [
     code: "https://github.com/MohammadHarish52/Ex-game",
   },
   {
-    id: 8,
+    id: 9,
     Name: "Flappy Bird",
     Description: "Bring Physics to Web",
     bgDarkImage: "/assets/flappydark.png",

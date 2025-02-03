@@ -26,4 +26,13 @@ export const freelanceArray = [
     code: "https://github.com/MohammadHarish52/residency-client",
     Description: "Restaurant management system",
   },
+  {
+    id: 4,
+    Name: "LetsGrowEsports",
+    bgimage: "/assets/instachip.png",
+    bgDarkImage: "/assets/instachipdark.png",
+    LinkGit: "https://letsgrowesports.vercel.app/",
+    code: "https://github.com/MohammadHarish52/residency-client",
+    Description: "Restaurant management system",
+  },
 ];
