@@ -52,7 +52,7 @@ const Logo = () => {
           <h1 className="text-2xl leading-none tracking-[-1.3px]   font-bold">
             Mohammad Harish
           </h1>
-          <h2 className="text-2xl font-thin ">Frontend Developer</h2>
+          <h2 className="text-2xl font-thin ">FullStack Developer</h2>
         </div>
       </div>
     </div>
