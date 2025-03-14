@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="flex flex-col px-2 py-2 sm:px-16 sm:py-2   ">
       <div className="flex flex-col items-center sm:items-start justify-start leading-0 sm:leading-[96px] ">
-        <Tagline heading="MOHAMMAD HARISH" subheading="FRONTEND DEVELOPER" />
+        <Tagline heading="MOHAMMAD HARISH" subheading="FULLSTACK DEVELOPER" />
       </div>
       <div className="flex flex-col lg:flex-row gap-[10px] sm:gap-0 justify-between items-center text-[18px] font-[500] pb-[70px]">
         <div className="contacts flex gap-8 text-[18px] font-[500] ">

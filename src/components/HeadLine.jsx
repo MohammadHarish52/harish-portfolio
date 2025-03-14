@@ -1,8 +1,8 @@
-import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import Tagline from "./Tagline";
+import gsap from "gsap";
 import { useContext } from "react";
 import { LightContext } from "./LightContext";
+import Tagline from "./Tagline";
 
 const HeadLine = () => {
   const { light, setLight } = useContext(LightContext);
@@ -18,10 +18,12 @@ const HeadLine = () => {
   return (
     <div className="flex flex-col   items-start ">
       <div className="flex flex-col items-start justify-start leading-0 sm:leading-[96px] ">
-        <Tagline heading="MOHAMMAD HARISH" subheading="FRONTEND DEVELOPER" />
+        <Tagline heading="MOHAMMAD HARISH" subheading="FULLSTACK DEVELOPER" />
         <p className="text-[22px] sm:text-[40px]  font-[500] text-left sm:leading-[48px] leading-[25px] pb-[40px] sm:tracking-[-1.3px] tracking-[-.8px]">
-          As a front-end developer,
-          <br /> I create dynamic and responsive web interfaces <br />
+          As a full-Stack developer,
+          <br />
+          I create innovative digital solutions
+          <br />
           that help businesses around the world grow.
         </p>
 
