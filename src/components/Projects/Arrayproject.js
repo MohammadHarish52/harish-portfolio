@@ -1,6 +1,26 @@
 export const projectsArray = [
   {
     id: 1,
+    Name: "Elegance",
+    Description: "A cosmetic Showcase UI website",
+    bgDarkImage: "/assets/elegance.png",
+    Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript"],
+    bgimage: "/assets/elegancebg.png",
+    LinkGit: "https://elegance-orpin.vercel.app/",
+    code: "https://github.com/MohammadHarish52/magic-maker-tool",
+  },
+  {
+    id: 10,
+    Name: "Pannekka",
+    Description: "Recipe Ui",
+    bgDarkImage: "/assets/pannekkadark.png",
+    Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript"],
+    bgimage: "/assets/pannekkabg.png",
+    LinkGit: "https://pannekka.vercel.app/",
+    code: "https://github.com/MohammadHarish52/pankekka-website-builder",
+  },
+  {
+    id: 2,
     Name: "EthSignals",
     Description: "Ethereum Signals",
     bgDarkImage: "/assets/cryptodark.png",
@@ -9,16 +29,7 @@ export const projectsArray = [
     LinkGit: "https://crypto-analysis-phi.vercel.app/",
     code: "https://github.com/MohammadHarish52/crypto-analysis",
   },
-  {
-    id: 2,
-    Name: "TachShop",
-    Description: "Ecommerce Mern website",
-    bgDarkImage: "/assets/tachshopdark.png",
-    Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript", "GSAP"],
-    bgimage: "/assets/tachshop.png",
-    LinkGit: "https://tachshop.onrender.com/",
-    code: "https://github.com/MohammadHarish52/Tachshop",
-  },
+
   {
     id: 3,
     Name: "Aesop Ui",

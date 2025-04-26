@@ -5,7 +5,7 @@ import { LightContext } from "./LightContext";
 import Tagline from "./Tagline";
 
 const HeadLine = () => {
-  const { light, setLight } = useContext(LightContext);
+  const { light } = useContext(LightContext);
 
   useGSAP(() => {
     gsap.to(".name", {
