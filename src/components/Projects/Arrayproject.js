@@ -24,7 +24,7 @@ export const projectsArray = [
     id: 3,
     Name: "focusFeed",
     Description: "News media website",
-    bgDarkImage: "/assets/focusdark.png",
+    bgDarkImage: "/assets/focusfeeddark.png",
     Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript"],
     bgimage: "/assets/focusfeed.png",
     LinkGit: "https://focusfeed-daily-glance.vercel.app/",
