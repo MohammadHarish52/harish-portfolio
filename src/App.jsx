@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects/Projects";
 import CustomCursor from "./components/CustomCursor";
 import { LightContext, LightProvider } from "./components/LightContext";
+import { Analytics } from "@vercel/analytics/react"
 
 const AppContent = () => {
   const { light } = useContext(LightContext);
@@ -23,6 +24,7 @@ const AppContent = () => {
 
   return (
     <>
+    <Analytics />
       <CustomCursor />
       <Routes>
         <Route path="/" element={<Home />} />
