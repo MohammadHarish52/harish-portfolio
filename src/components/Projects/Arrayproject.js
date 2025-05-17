@@ -17,7 +17,7 @@ export const projectsArray = [
     bgDarkImage: "/assets/panekkadark.png",
     Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript"],
     bgimage: "/assets/panekkabg.png",
-    LinkGit: "https://pannekka.vercel.app/",
+    LinkGit: "https://pankekka-website.vercel.app/",
     code: "https://github.com/MohammadHarish52/pankekka-website-builder",
   },
   {
