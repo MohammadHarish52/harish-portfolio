@@ -1,9 +1,9 @@
-import { experienceData } from "./constants/Experince";
-import { useContext, useEffect, useRef } from "react";
-import { LightContext } from "./LightContext";
-import { FaStar } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useContext, useEffect, useRef } from "react";
+import { FaStar } from "react-icons/fa";
+import { experienceData } from "./constants/Experince";
+import { LightContext } from "./LightContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -153,7 +153,7 @@ const Experince = () => {
         </h1>
       </div>
       <div className="flex flex-col">
-        <p className="text-[31px] findme opacity-0 sm:text-[40px] font-[500] text-left sm:leading-[48px] leading-[39px] pb-[80px] sm:tracking-[-1.3px] tracking-[-.8px]">
+        <p className="text-[22px] findme opacity-0 sm:text-[40px] font-[500] text-left sm:leading-[48px] leading-[25px] pb-[80px] sm:tracking-[-1.3px] tracking-[-.8px]">
           Founder of InfiniteStudioX, specializing in <br />
           Web Development, Web3, DeFi, and App <br />
           Development. Focused on creating MVPs <br />
