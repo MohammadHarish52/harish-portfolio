@@ -1,13 +1,13 @@
 import { useContext, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
 import { LightContext } from "./LightContext";
+import PropTypes from "prop-types";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const BottomTagline = (props) => {
-  const { light, setLight } = useContext(LightContext);
+  const { light } = useContext(LightContext);
   useEffect(() => {
     gsap.to(".bottom", {
       opacity: 1,
@@ -25,11 +25,11 @@ const BottomTagline = (props) => {
   return (
     <div className="flex items-start py-[220px]">
       <div className="flex flex-col items-start justify-start leading-0 sm:leading-[96px] bottom opacity-0">
-        <p className="text-[31px] sm:text-[40px] font-[500] text-left sm:leading-[48px] leading-[39px] pb-[40px] sm:tracking-[-1.3px] tracking-[-.8px]">
+        <p className="text-[22px] sm:text-[40px] font-[500] text-left sm:leading-[48px] leading-[25px] pb-[40px] sm:tracking-[-1.3px] tracking-[-.8px]">
           {props.paraone} <br />
           {props.paraoneone}
         </p>
-        <p className="text-[31px] sm:text-[40px] font-[500] text-left sm:leading-[48px] leading-[39px] pb-[40px] sm:tracking-[-1.3px] tracking-[-.8px]">
+        <p className="text-[22px] sm:text-[40px] font-[500] text-left sm:leading-[48px] leading-[25px] pb-[40px] sm:tracking-[-1.3px] tracking-[-.8px]">
           {props.paratwo} <br />
           {props.paratwotwo}
         </p>
@@ -51,3 +51,10 @@ const BottomTagline = (props) => {
 };
 
 export default BottomTagline;
+
+BottomTagline.propTypes = {
+  paraone: PropTypes.string.isRequired,
+  paraoneone: PropTypes.string,
+  paratwo: PropTypes.string.isRequired,
+  paratwotwo: PropTypes.string,
+};
