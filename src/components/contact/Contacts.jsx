@@ -23,7 +23,7 @@ const Contact = () => {
             </h1>
           </a>
           <a
-            href="https://twitter.com/Mohamma59305726"
+            href="https://x.com/Haarish_52"
             className="text-gray-700 flex items-center mb-2 social-link text-4xl text-center"
           >
             <FaXTwitter className="mr-2 text-black text-8xl social-icon" />

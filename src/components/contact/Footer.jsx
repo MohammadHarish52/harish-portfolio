@@ -1,5 +1,5 @@
-import Tagline from "../Tagline";
 import { GoArrowUp } from "react-icons/go";
+import Tagline from "../Tagline";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
           </a>
           <a href="https://www.linkedin.com/in/mohammad-harish52/">Linkedin</a>
           <a href="https://github.com/MohammadHarish52">Github</a>
-          <a href="https://x.com/Harish_52">Twitter</a>
+          <a href="https://x.com/Haarish_52">Twitter</a>
         </div>
         <div
           className="back_to_top flex justify-center items-center cursor-pointer"
