@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,19 +8,19 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 /* App.css */
 body {
-  cursor: none; /* Hide the default cursor */
+  cursor: auto; /* Show the default cursor */
 }
 .light {
-  background-color: #000b07;
-  color: #fff5e1;
+  background-color: #000;
+  color: #e9e9e9;
 }
 .day {
   background-color: #fff5e1;
-  color: #000b07;
+  color: #000;
 }
 
 .custom-cursor {
@@ -134,4 +134,28 @@ img {
 
 .hover-image:hover {
   filter: grayscale(0%);
+}
+
+/* Masked title fill using background image */
+.masked-title {
+  background-image: url("/assets/mask.png");
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Cohesive body text style for dark vibe */
+.vibe-text {
+  color: #e9e9e9;
+  letter-spacing: 0.2px;
+  text-shadow: 0 0 6px rgba(255, 245, 225, 0.05);
+}
+
+/* Subheading typography (mobile-first: let utilities set size/line-height) */
+.subheading-text {
+  text-transform: capitalize;
+  font-weight: 300;
+  letter-spacing: -0.04em;
 }

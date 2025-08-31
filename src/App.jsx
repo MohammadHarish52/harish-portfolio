@@ -5,9 +5,8 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Home from "./components/Home";
 import Projects from "./components/Projects/Projects";
-import CustomCursor from "./components/CustomCursor";
 import { LightContext, LightProvider } from "./components/LightContext";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 const AppContent = () => {
   const { light } = useContext(LightContext);
@@ -24,8 +23,8 @@ const AppContent = () => {
 
   return (
     <>
-    <Analytics />
-      <CustomCursor />
+      <Analytics />
+      {/* Custom cursor removed */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

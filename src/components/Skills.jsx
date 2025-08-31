@@ -15,11 +15,10 @@ import { FaNode } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { useRef, useEffect, useContext } from "react";
+import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/all";
 import Rating from "./Rating";
-import { LightContext } from "./LightContext";
+// import { LightContext } from "./LightContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -77,7 +76,7 @@ const skillsData = [
 ];
 
 const Skills = () => {
-  const { light, setLight } = useContext(LightContext);
+  // const { light } = useContext(LightContext);
 
   const h1Ref = useRef(null);
 
@@ -111,18 +110,14 @@ const Skills = () => {
       <div className="flex flex-col sm:flex-row justify-between items-center w-[100%] pb-[35px] sm:pb-[73px] ">
         <h1
           ref={h1Ref}
-          className="text-[39px] name opacity-0 sm:text-[71px] md:text-[102px] font-[700] text-left tracking-[-4px] "
+          className="text-[32px] sm:text-[56px] font-[700] text-left tracking-[-3px] masked-title"
         >
           SKILLS
         </h1>
         <a
           href="mailto:xharish52@gmail.com"
-          className={`text-[18px] ${
-            light ? "border-[#fff5e1]" : "border-[#000]"
-          } border-[1px] px-[35px] rounded-full ${
-            light ? "hover:text-[#000]" : "hover:text-[#fff5e1]"
-          } ${light ? "hover:bg-[#fff5e1]" : "hover:bg-[#000]"} 
-            font-semibold text-left leading-[48px] duration-1000`}
+          aria-label="Email xharish52@gmail.com"
+          className={`inline-flex items-center justify-center text-[16px] sm:text-[18px] vibe-text font-semibold border-[#fff5e1] border px-5 sm:px-7 py-2 sm:py-3 rounded-full leading-none hover:text-[#000] hover:bg-[#fff5e1] duration-300`}
         >
           xharish52@gmail.com
         </a>

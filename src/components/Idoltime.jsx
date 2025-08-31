@@ -36,10 +36,10 @@ const Idoltime = () => {
       <div className="pt-[180px] sm:pt-[290px] ">
         <div className="flex  flex-col justify-between items-start sm:flex-row gap-[10px]">
           {" "}
-          <h1 className="text-[22px] font-[500] tracking[.-5px] ">
+          <h1 className="text-[22px] font-[500] masked-title tracking[.-5px] ">
             (Idoltime)
           </h1>
-          <p className="text-[22px] findme opacity-0 sm:text-[40px] font-[500] text-left sm:leading-[48px] leading-[25px] pb-[80px] sm:tracking-[-1.3px] tracking-[-.8px]">
+          <p className="text-[22px] findme opacity-0 sm:text-[40px] font-[300] text-left sm:leading-[48px] leading-[25px] pb-[80px] sm:tracking-[-1.3px] tracking-[-.8px]">
             When I’m not at the computer You <br />
             can find me watching Messi ,binging <br /> one piece and capturing
             Nature.

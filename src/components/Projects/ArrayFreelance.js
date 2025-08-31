@@ -5,7 +5,6 @@ export const freelanceArray = [
     bgimage: "/assets/elegalify.png",
     bgDarkImage: "/assets/elegalify.png",
     LinkGit: "https://freelance-1-one.vercel.app/",
-    code: "https://github.com/MohammadHarish52/freelance-1e",
     Description: "Legal website for lawyers",
   },
   {
@@ -14,7 +13,6 @@ export const freelanceArray = [
     bgimage: "/assets/memansa.png",
     bgDarkImage: "/assets/memansa.png",
     LinkGit: "https://memansa.vercel.app/",
-    code: "https://github.com/MohammadHarish52/memansa",
     Description: "Accessories design website",
   },
   {
@@ -23,7 +21,6 @@ export const freelanceArray = [
     bgimage: "/assets/instachip.png",
     bgDarkImage: "/assets/instachip.png",
     LinkGit: "https://residency-client.vercel.app/",
-    code: "https://github.com/MohammadHarish52/residency-client",
     Description: "Restaurant management system",
   },
   {
@@ -32,7 +29,6 @@ export const freelanceArray = [
     bgimage: "/assets/letsgrowesprots.png",
     bgDarkImage: "/assets/letsgrowesprots.png",
     LinkGit: "https://letsgrowesports.vercel.app/",
-    code: "https://github.com/MohammadHarish52/residency-client",
     Description: "Restaurant management system",
   },
 ];

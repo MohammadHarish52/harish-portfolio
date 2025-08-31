@@ -148,12 +148,12 @@ const Experince = () => {
       className="flex justify-between items-start sm:pt-[220px] sm:pb-[290px] pt-[140px] pb-[160px] flex-wrap gap-[10px] w-[100%]"
     >
       <div>
-        <h1 className="text-[22px] sm:text-[40px] font-[500] tracking-[-.5px]">
+        <h1 className="text-[22px] sm:text-[40px] font-[700] tracking-[-2px] masked-title">
           (Experience)
         </h1>
       </div>
       <div className="flex flex-col">
-        <p className="text-[22px] findme opacity-0 sm:text-[40px] font-[500] text-left sm:leading-[48px] leading-[25px] pb-[80px] sm:tracking-[-1.3px] tracking-[-.8px]">
+        <p className="text-[18px] xs:text-[20px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-[500] text-left leading-[22px] xs:leading-[24px] sm:leading-[32px] md:leading-[38px] lg:leading-[42px] xl:leading-[48px] pb-[40px] tracking-[-.6px] xs:tracking-[-.7px] sm:tracking-[-.9px] md:tracking-[-1.1px] lg:tracking-[-1.2px] xl:tracking-[-1.3px] vibe-text subheading-text">
           Founder of InfiniteStudioX, specializing in <br />
           Web Development, Web3, DeFi, and App <br />
           Development. Focused on creating MVPs <br />
@@ -211,7 +211,7 @@ const Experince = () => {
                 <div className="flex gap-6 mb-[80px]">
                   <div className="w-10 h-10 relative flex-shrink-0"></div>
                   <div className="flex flex-col gap-[25px] content will-change-transform">
-                    <h2 className="text-[18px] font-[500] leading-[24px] text-left tracking-[-.5px]">
+                    <h2 className="text-[18px] font-[500] leading-[24px] text-left tracking-[-.5px] masked-title">
                       {exp.name}
                     </h2>
                     <p className="text-[#868788] text-[18px] font-[500] text-left w-full tracking-[-.5px] leading-[1.5em]">

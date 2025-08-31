@@ -48,15 +48,18 @@ const Modal = ({ isOpen, onClose }) => {
               key={to}
               to={to}
               onClick={onClose}
-              className={`text-[42px] sm:text-[56px] font-[600] py-4 tracking-[-4px] ${
-                light
-                  ? "hover:text-[#E6C2BF] hover:translate-x-4"
-                  : "hover:text-gray-500 hover:translate-x-4"
-              } transition-all duration-300`}
+              className={`text-[42px] sm:text-[56px] font-[600] py-4 tracking-[-4px] masked-title`}
             >
               {text}
             </Link>
           ))}
+          <a
+            href="#contact"
+            onClick={onClose}
+            className={`text-[42px] sm:text-[56px] font-[600] py-4 tracking-[-4px] masked-title`}
+          >
+            Contact
+          </a>
         </nav>
 
         {/* Footer */}

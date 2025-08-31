@@ -1,10 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useContext } from "react";
-import { LightContext } from "./LightContext";
 
 const Logo = () => {
-  const { light, setLight } = useContext(LightContext);
   useGSAP(() => {
     gsap.from(".circledown", {
       x: -20,
@@ -33,28 +30,14 @@ const Logo = () => {
     });
   }, []);
   return (
-    <div>
-      <div className="flex ">
-        <div className="">
-          <div
-            className={`circledown ${
-              light ? "circle-dark" : "circle"
-            } flex justify-center items-center`}
-          ></div>
-
-          <div
-            className={`circleup ${
-              light ? "circle-dark" : "circle"
-            } flex justify-center items-center`}
-          ></div>
-        </div>
-        <div className="Details hidden flex-col items-start sm:flex">
-          <h1 className="text-2xl leading-none tracking-[-1.3px]   font-bold">
-            Mohammad Harish
-          </h1>
-          <h2 className="text-2xl font-thin ">FullStack Developer</h2>
-        </div>
-      </div>
+    <div className="flex items-center">
+      <img
+        src="/assets/logo.png"
+        alt="Harish logo"
+        className="h-16 w-auto sm:h-20 ml-[-4px]"
+        loading="eager"
+        decoding="async"
+      />
     </div>
   );
 };

@@ -7,17 +7,24 @@ export const projectsArray = [
     Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript"],
     bgimage: "/assets/roastume.png",
     LinkGit: "https://roastume.fun",
-    code: "https://github.com/MohammadHarish52/roastume",
   },
   {
-    id: 2,
+    id: 3,
+    Name: "UiHack",
+    Description: "Made this hackathon website hosted by ishan sharma ",
+    bgDarkImage: "/assets/uihack.png",
+    Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript"],
+    bgimage: "/assets/uihack.png",
+    LinkGit: "https://ui-hackathon-jam.vercel.app/",
+  },
+  {
+    id: 4,
     Name: "PixelBrain",
     Description: "Check your IQ",
     bgDarkImage: "/assets/pixelbrain.png",
     Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript"],
     bgimage: "/assets/pixelbrain.png",
     LinkGit: "https://iq-quiz-kappa.vercel.app/",
-    code: "https://github.com/MohammadHarish52/pixelbrain-iq",
   },
 
   {
@@ -28,7 +35,6 @@ export const projectsArray = [
     Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript"],
     bgimage: "/assets/panekka.png",
     LinkGit: "https://pankekka-website.vercel.app/",
-    code: "https://github.com/MohammadHarish52/pankekka-website-builder",
   },
   {
     id: 3,
@@ -38,7 +44,6 @@ export const projectsArray = [
     Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript"],
     bgimage: "/assets/focusfeed.png",
     LinkGit: "https://focusfeed-daily-glance.vercel.app/",
-    code: "https://github.com/MohammadHarish52/focusfeed-daily-glance",
   },
   {
     id: 4,
@@ -48,7 +53,6 @@ export const projectsArray = [
     Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript"],
     bgimage: "/assets/funkytweets.png",
     LinkGit: "https://funky-tweet-vibes.vercel.app/",
-    code: "https://github.com/MohammadHarish52/funky-tweet-vibes",
   },
   {
     id: 5,
@@ -58,7 +62,6 @@ export const projectsArray = [
     Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript", "GSAP"],
     bgimage: "/assets/ethsignals.png",
     LinkGit: "https://crypto-analysis-phi.vercel.app/",
-    code: "https://github.com/MohammadHarish52/crypto-analysis",
   },
 
   {
@@ -69,7 +72,6 @@ export const projectsArray = [
     Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript"],
     bgimage: "/assets/aesop.png",
     LinkGit: "https://timely-chaja-21ff77.netlify.app/",
-    code: "https://github.com/MohammadHarish52/Aesop",
   },
   {
     id: 6,
@@ -79,7 +81,6 @@ export const projectsArray = [
     bgimage: "/assets/perfectscaled.png",
     Technologies: ["React", "API"],
     LinkGit: "https://perfect-scaled.vercel.app/",
-    code: "https://github.com/MohammadHarish52/perfect_scaled",
   },
   {
     id: 7,
@@ -89,7 +90,6 @@ export const projectsArray = [
     bgimage: "/assets/bookmovie.png",
     Technologies: ["HTML", "CSS", "JavaScript"],
     LinkGit: "https://book-movie-seven.vercel.app/",
-    code: "https://github.com/MohammadHarish52/Two-screen",
   },
 
   {
@@ -100,7 +100,6 @@ export const projectsArray = [
     bgimage: "/assets/pixelbrain.png",
     Technologies: ["HTML", "CSS", "TypeScript"],
     LinkGit: "https://flappy-bird-chi-topaz.vercel.app/",
-    code: "https://github.com/MohammadHarish52/flop-ball",
   },
   // Add more projects as needed
 ];
