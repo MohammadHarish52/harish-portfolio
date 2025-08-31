@@ -8,9 +8,9 @@ const HomeProjects = () => {
   return (
     <div className="pt-[180px]">
       <div className="font-semibold text-[18px] tracking-[-.5px] flex justify-between py-4">
-        <h1 className="masked-title">(Selected work)</h1>
+        <h1 className="">(Selected work)</h1>
         <div className="flex items-center gap-2">
-          <h1 className="masked-title">Discover</h1>
+          <h1 className="">Discover</h1>
           <GoArrowDown />
         </div>
       </div>
