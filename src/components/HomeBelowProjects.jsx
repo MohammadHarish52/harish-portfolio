@@ -18,7 +18,7 @@ const HomeBelowProjetcs = () => {
                 />
               </div>
               <div className="flex justify-between itmes-center align-left font-[500] text-[18px] tracking-[.5px] py-4">
-                <h1 className="masked-title">{project.Name}</h1>
+                <h1 className="">{project.Name}</h1>
                 <a
                   href={project.LinkGit}
                   target="_blank"

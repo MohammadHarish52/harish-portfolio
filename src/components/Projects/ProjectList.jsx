@@ -27,7 +27,7 @@ const ProjectList = ({ items }) => {
           </a>
           <div className="flex justify-between items-center font-[300] text-[18px] tracking-[.5px] py-4">
             <a href={project.LinkGit} className="flex flex-col text-left ">
-              <h1 className="masked-title">{project.Name}</h1>
+              <h1 className="">{project.Name}</h1>
             </a>
             <a
               href={project.LinkGit}
