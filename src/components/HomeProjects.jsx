@@ -29,7 +29,9 @@ const HomeProjects = () => {
                 <h1 className="masked-title">{project.Name}</h1>
                 <a
                   href={project.LinkGit}
-                  className="text-[18px] cursor-pointer"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="text-[18px] cursor-pointer relative z-[1] pointer-events-auto"
                 >
                   Live
                 </a>

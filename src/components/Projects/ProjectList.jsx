@@ -29,7 +29,14 @@ const ProjectList = ({ items }) => {
             <a href={project.LinkGit} className="flex flex-col text-left ">
               <h1 className="masked-title">{project.Name}</h1>
             </a>
-            <a href={project.LinkGit}>Live</a>
+            <a
+              href={project.LinkGit}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="relative z-[1] pointer-events-auto"
+            >
+              Live
+            </a>
           </div>
         </div>
       ))}
