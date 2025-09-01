@@ -25,7 +25,7 @@ export const uiuxArray = [
     LinkGit: "https://elegance-orpin.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     Name: "Panekka",
     Description: "Recipe UI",
     bgDarkImage: "/assets/panekka.png",
@@ -33,7 +33,7 @@ export const uiuxArray = [
     LinkGit: "https://pankekka-website.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     Name: "Perfectly Scaled",
     Description: "Product visualization UI",
     bgDarkImage: "/assets/perfectscaled.png",
@@ -41,7 +41,7 @@ export const uiuxArray = [
     LinkGit: "https://perfect-scaled.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     Name: "Funky Tweets",
     Description: "Twitter-inspired UI",
     bgDarkImage: "/assets/funkytweets.png",
@@ -49,7 +49,7 @@ export const uiuxArray = [
     LinkGit: "https://funky-tweet-vibes.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     Name: "Aesop UI",
     Description: "Aesop homepage clone",
     bgDarkImage: "/assets/aesop.png",
@@ -57,7 +57,7 @@ export const uiuxArray = [
     LinkGit: "https://timely-chaja-21ff77.netlify.app/",
   },
   {
-    id: 7,
+    id: 8,
     Name: "FocusFeed",
     Description: "News media UI",
     bgDarkImage: "/assets/focusfeed.png",
