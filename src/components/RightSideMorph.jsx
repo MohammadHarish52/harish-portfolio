@@ -1,198 +1,81 @@
 import { useEffect, useRef } from "react";
 
-// Right-side decorative morphing geometry rendered on Canvas
-// - Fixed to the right side on md+ screens
-// - Smoothly morphs between circle, triangle, square, pentagon
-// - Pointer-events disabled so it never interferes with UI
+// Right-side decorative morphing geometry - DEBUG VERSION
 const RightSideMorph = () => {
   const wrapperRef = useRef(null);
   const canvasRef = useRef(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas) {
+      console.log("❌ Canvas not found");
+      return;
+    }
+
     const ctx = canvas.getContext("2d", { alpha: true });
-    if (!ctx) return;
+    if (!ctx) {
+      console.log("❌ Canvas context not available");
+      return;
+    }
 
-    const dpi = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
-    let frameId;
-    let resizeObserver;
-    let start = performance.now();
+    console.log("✅ Canvas initialized");
 
-    const SAMPLES = 160; // smoothness of curves
-    const DURATION = 6; // seconds per morph
+    // Set fixed size for debugging
+    canvas.width = 200;
+    canvas.height = 200;
+    canvas.style.width = "200px";
+    canvas.style.height = "200px";
 
-    // Utility: easing and lerp
-    const easeInOutCubic = (t) =>
-      t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-    const lerp = (a, b, t) => a + (b - a) * t;
+    // Draw a simple visible test shape
+    const drawTest = () => {
+      ctx.clearRect(0, 0, 200, 200);
 
-    // Generate normalized shape point arrays ([-1,1] range)
-    const sampleCircle = () => {
-      const pts = [];
-      for (let i = 0; i < SAMPLES; i++) {
-        const a = (i / SAMPLES) * Math.PI * 2;
-        pts.push({ x: Math.cos(a), y: Math.sin(a) });
-      }
-      return pts;
-    };
-
-    const sampleRegularPolygonPerimeter = (sides) => {
-      // Sample along the perimeter so all shapes have equal-length point arrays
-      const verts = [];
-      const angleStep = (Math.PI * 2) / sides;
-      for (let i = 0; i < sides; i++) {
-        const a = -Math.PI / 2 + i * angleStep;
-        verts.push({ x: Math.cos(a), y: Math.sin(a) });
-      }
-      // Create edges
-      const edges = [];
-      for (let i = 0; i < sides; i++) {
-        const a = verts[i];
-        const b = verts[(i + 1) % sides];
-        const dx = b.x - a.x;
-        const dy = b.y - a.y;
-        const len = Math.hypot(dx, dy);
-        edges.push({ a, b, len });
-      }
-      const perimeter = edges.reduce((acc, e) => acc + e.len, 0);
-      const step = perimeter / SAMPLES;
-      const pts = [];
-      let accLen = 0;
-      let currentEdge = 0;
-      let edgePos = 0;
-      for (let i = 0; i < SAMPLES; i++) {
-        const target = i * step;
-        while (accLen + (edges[currentEdge]?.len || 0) < target) {
-          accLen += edges[currentEdge].len;
-          currentEdge = (currentEdge + 1) % sides;
-          edgePos = 0;
-        }
-        const e = edges[currentEdge];
-        const remaining = target - accLen;
-        const t = e.len === 0 ? 0 : remaining / e.len;
-        pts.push({ x: lerp(e.a.x, e.b.x, t), y: lerp(e.a.y, e.b.y, t) });
-      }
-      return pts;
-    };
-
-    const SHAPES = [
-      sampleCircle(), // circle
-      sampleRegularPolygonPerimeter(3), // triangle
-      sampleRegularPolygonPerimeter(4), // square
-      sampleRegularPolygonPerimeter(5), // pentagon
-    ];
-
-    const mixShapes = (a, b, t) =>
-      a.map((p, i) => ({ x: lerp(p.x, b[i].x, t), y: lerp(p.y, b[i].y, t) }));
-
-    const resize = () => {
-      const wrap = wrapperRef.current;
-      if (!wrap) return;
-      const rect = wrap.getBoundingClientRect();
-      // Base strictly on available width for consistent aspect ratio
-      const targetWidth = rect.width || 220;
-      const size = Math.max(160, Math.min(260, targetWidth));
-      canvas.width = Math.floor(size * dpi);
-      canvas.height = Math.floor(size * dpi);
-      canvas.style.width = `${Math.floor(size)}px`;
-      canvas.style.height = `${Math.floor(size)}px`;
-      ctx.setTransform(dpi, 0, 0, dpi, 0, 0);
-    };
-
-    const draw = (pts) => {
-      const { width, height } = canvas;
-      const w = width / dpi;
-      const h = height / dpi;
-      ctx.clearRect(0, 0, w, h);
-
-      ctx.save();
-      ctx.translate(w / 2, h / 2);
-      const radius = Math.min(w, h) * 0.44;
-
-      // Background subtle radial tint
-      const bg = ctx.createRadialGradient(
-        0,
-        -radius * 0.2,
-        radius * 0.2,
-        0,
-        0,
-        radius * 1.1
-      );
-      bg.addColorStop(0, "rgba(255,255,255,0.03)");
-      bg.addColorStop(0.5, "rgba(0,150,255,0.05)");
-      bg.addColorStop(1, "rgba(0,0,0,0)");
-      ctx.fillStyle = bg;
+      // Draw a bright red circle for testing
       ctx.beginPath();
-      ctx.arc(0, 0, radius * 1.1, 0, Math.PI * 2);
+      ctx.arc(100, 100, 80, 0, Math.PI * 2);
+      ctx.fillStyle = "#ff0000";
       ctx.fill();
-
-      // Build path
-      ctx.beginPath();
-      for (let i = 0; i < pts.length; i++) {
-        const p = pts[i];
-        const x = p.x * radius;
-        const y = p.y * radius;
-        if (i === 0) ctx.moveTo(x, y);
-        else ctx.lineTo(x, y);
-      }
-      ctx.closePath();
-
-      // Fill solid black
-      ctx.fillStyle = "#000000";
-      ctx.fill();
-
-      // Thin, crisp stroke (slightly brighter for visibility)
-      ctx.strokeStyle = "rgba(255,255,255,0.9)";
-      ctx.lineWidth = 1.0;
-      ctx.shadowColor = "rgba(0,0,0,0)";
-      ctx.shadowBlur = 0;
+      ctx.strokeStyle = "#ffffff";
+      ctx.lineWidth = 3;
       ctx.stroke();
 
-      ctx.restore();
+      // Add text for debugging
+      ctx.fillStyle = "#ffffff";
+      ctx.font = "16px Arial";
+      ctx.textAlign = "center";
+      ctx.fillText("MORPH", 100, 105);
     };
 
-    const animate = (now) => {
-      const elapsed = (now - start) / 1000;
-      const total = SHAPES.length;
-      const phase = Math.floor(elapsed / DURATION) % total;
-      const next = (phase + 1) % total;
-      const t = easeInOutCubic((elapsed % DURATION) / DURATION);
-      const pts = mixShapes(SHAPES[phase], SHAPES[next], t);
-      draw(pts);
-      frameId = requestAnimationFrame(animate);
-    };
-
-    resize();
-    frameId = requestAnimationFrame(animate);
-    // Extra reflows to handle late font/layout changes on initial load
-    const rafResize = requestAnimationFrame(resize);
-    const timeoutId = setTimeout(resize, 300);
-
-    // Observe container resize for responsiveness
-    resizeObserver = new ResizeObserver(resize);
-    if (wrapperRef.current) resizeObserver.observe(wrapperRef.current);
-    window.addEventListener("resize", resize);
-    window.addEventListener("load", resize);
+    drawTest();
+    console.log("✅ Test shape drawn");
 
     return () => {
-      cancelAnimationFrame(frameId);
-      window.removeEventListener("resize", resize);
-      window.removeEventListener("load", resize);
-      cancelAnimationFrame(rafResize);
-      clearTimeout(timeoutId);
-      if (resizeObserver) resizeObserver.disconnect();
+      console.log("🔄 Component cleanup");
     };
   }, []);
+
+  console.log("🔄 RightSideMorph rendering");
 
   return (
     <div
       ref={wrapperRef}
-      className="relative pointer-events-none select-none ml-3 md:ml-6 block shrink-0 self-start z-30"
-      aria-hidden="true"
-      style={{ width: "clamp(120px, 10vw, 220px)", minWidth: 120 }}
+      className="relative ml-3 md:ml-6 hidden md:block shrink-0 self-start"
+      style={{
+        width: "200px",
+        height: "200px",
+        backgroundColor: "rgba(255,0,0,0.1)", // Debug background
+        border: "2px solid red", // Debug border
+        zIndex: 9999,
+      }}
     >
-      <canvas ref={canvasRef} />
+      <canvas
+        ref={canvasRef}
+        style={{
+          display: "block",
+          border: "1px solid blue", // Debug canvas border
+        }}
+      />
+      <div style={{ color: "white", fontSize: "12px" }}>DEBUG MORPH</div>
     </div>
   );
 };
