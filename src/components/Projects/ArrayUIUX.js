@@ -20,7 +20,7 @@ export const uiuxArray = [
     id: 3,
     Name: "Elegance",
     Description: "Cosmetic showcase UI website",
-    bgDarkImage: "/assets/elegance.png",
+    bgDarkImage: "/assets/Alan.png",
     bgimage: "/assets/Alan.png",
     LinkGit: "https://elegance-orpin.vercel.app/",
   },
