@@ -1,7 +1,6 @@
 import gsap from "gsap";
 import Layout from "./Layout";
 import Tagline from "./Tagline";
-import RightSideMorph from "./RightSideMorph";
 import Skills from "./Skills";
 import BottomTagline from "./BottomTagline";
 import Education from "./Education";
@@ -23,10 +22,7 @@ const About = () => {
     <Layout>
       <div className="flex flex-col   items-start ">
         <div className="flex flex-col items-start justify-start leading-0 sm:leading-[96px] pb-[70px] sm:pb-[120px] w-full">
-          <div className="w-full grid grid-cols-[1fr_auto] items-start gap-4">
-            <Tagline heading="Imagine" subheading="Design and Code" />
-            <RightSideMorph />
-          </div>
+          <Tagline heading="Imagine" subheading="Design and Code" />
           <p className="text-[18px] xs:text-[20px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-[500] text-left leading-[22px] xs:leading-[24px] sm:leading-[32px] md:leading-[38px] lg:leading-[42px] xl:leading-[48px] pb-[40px] tracking-[-.6px] xs:tracking-[-.7px] sm:tracking-[-.9px] md:tracking-[-1.1px] lg:tracking-[-1.2px] xl:tracking-[-1.3px] vibe-text subheading-text">
             Discover my approach, process, and
             <br />
