@@ -142,9 +142,9 @@ const RightSideMorph = () => {
       ctx.fillStyle = "#000000";
       ctx.fill();
 
-      // Thin, crisp stroke
-      ctx.strokeStyle = "rgba(255,255,255,0.65)";
-      ctx.lineWidth = 0.7;
+      // Thin, crisp stroke (slightly brighter for visibility)
+      ctx.strokeStyle = "rgba(255,255,255,0.9)";
+      ctx.lineWidth = 1.0;
       ctx.shadowColor = "rgba(0,0,0,0)";
       ctx.shadowBlur = 0;
       ctx.stroke();
@@ -165,15 +165,22 @@ const RightSideMorph = () => {
 
     resize();
     frameId = requestAnimationFrame(animate);
+    // Extra reflows to handle late font/layout changes on initial load
+    const rafResize = requestAnimationFrame(resize);
+    const timeoutId = setTimeout(resize, 300);
 
     // Observe container resize for responsiveness
     resizeObserver = new ResizeObserver(resize);
     if (wrapperRef.current) resizeObserver.observe(wrapperRef.current);
     window.addEventListener("resize", resize);
+    window.addEventListener("load", resize);
 
     return () => {
       cancelAnimationFrame(frameId);
       window.removeEventListener("resize", resize);
+      window.removeEventListener("load", resize);
+      cancelAnimationFrame(rafResize);
+      clearTimeout(timeoutId);
       if (resizeObserver) resizeObserver.disconnect();
     };
   }, []);
@@ -181,9 +188,9 @@ const RightSideMorph = () => {
   return (
     <div
       ref={wrapperRef}
-      className="relative pointer-events-none select-none md:ml-6 hidden md:block shrink-0 self-start"
+      className="relative pointer-events-none select-none ml-3 md:ml-6 block shrink-0 self-start z-30"
       aria-hidden="true"
-      style={{ width: "clamp(160px, 12vw, 240px)" }}
+      style={{ width: "clamp(120px, 10vw, 220px)", minWidth: 120 }}
     >
       <canvas ref={canvasRef} />
     </div>

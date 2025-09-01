@@ -16,7 +16,7 @@ const HeadLine = () => {
   return (
     <div className="flex flex-col items-start">
       <div className="flex flex-col items-start justify-start leading-0 sm:leading-[96px] w-full">
-        <div className="w-full flex items-start justify-between">
+        <div className="w-full grid grid-cols-[1fr_auto] items-start gap-4">
           <Tagline
             heading="Mohammad Harish"
             subheading="Full Stack Developer"
