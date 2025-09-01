@@ -19,12 +19,12 @@ export const projectsArray = [
   },
   {
     id: 4,
-    Name: "PixelBrain",
-    Description: "Check your IQ",
-    bgDarkImage: "/assets/pixelbrain.png",
+    Name: "TaskFlow",
+    Description: "Task Management App",
+    bgDarkImage: "/assets/Taskflow.png",
     Technologies: ["React", "Tailwind", "HTML", "CSS", "JavaScript"],
-    bgimage: "/assets/pixelbrain.png",
-    LinkGit: "https://iq-quiz-kappa.vercel.app/",
+    bgimage: "/assets/taskflow.png",
+    LinkGit: "https://task-flow-x-seven.vercel.app/",
   },
 
   {
