@@ -53,13 +53,7 @@ const Modal = ({ isOpen, onClose }) => {
               {text}
             </Link>
           ))}
-          <a
-            href="#contact"
-            onClick={onClose}
-            className={`text-[42px] sm:text-[56px] font-[600] py-4 tracking-[-4px] masked-title`}
-          >
-            Contact
-          </a>
+         
         </nav>
 
         {/* Footer */}
