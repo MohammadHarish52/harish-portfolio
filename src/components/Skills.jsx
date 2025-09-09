@@ -27,9 +27,9 @@ const skillsData = [
     id: 1,
     name: "HTML",
     src: <FaHtml5 className="text-6xl" />,
-    stars: 4, // Add the number of stars for each skill
+    stars: 5, // Add the number of stars for each skill
   },
-  { id: 2, name: "CSS", src: <FaCss3Alt className="text-6xl" />, stars: 4 },
+  { id: 2, name: "CSS", src: <FaCss3Alt className="text-6xl" />, stars: 5 },
   {
     id: 3,
     name: "JavaScript",
@@ -47,7 +47,7 @@ const skillsData = [
     id: 6,
     name: "Tailwind CSS",
     src: <SiTailwindcss className="text-6xl" />,
-    stars: 3,
+    stars: 5,
   },
   {
     id: 7,
@@ -65,13 +65,13 @@ const skillsData = [
     id: 9,
     name: "MongoDB",
     src: <SiMongodb className="text-6xl" />,
-    stars: 3,
+    stars: 4,
   },
   {
     id: 10,
     name: "NextJs",
     src: <SiNextdotjs className="text-6xl" />,
-    stars: 2,
+    stars: 4,
   },
 ];
 
