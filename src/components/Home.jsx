@@ -1,15 +1,15 @@
-import Layout from "./Layout";
-import HeadLine from "./HeadLine";
 import BottomTagline from "./BottomTagline";
 import Devline from "./Devline";
-import HomeProjects from "./HomeProjects";
+import HeadLine from "./HeadLine";
 import HomeBelowProjetcs from "./HomeBelowProjects";
+import HomeProjects from "./HomeProjects";
+import Layout from "./Layout";
 
 const Home = () => {
   return (
     <Layout>
       <HeadLine />
-      <div className="flex flex-col   items-start ">
+      <div className="flex flex-col w-full  items-start ">
         <HomeProjects />
         <Devline />
         <HomeBelowProjetcs />
