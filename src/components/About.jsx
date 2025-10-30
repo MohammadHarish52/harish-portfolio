@@ -7,6 +7,7 @@ import Education from "./Education";
 import { useEffect } from "react";
 import Idoltime from "./Idoltime";
 import Experince from "./Experience";
+import SocialMediaStats from "./SocialMediaStats";
 
 const About = () => {
   useEffect(() => {
@@ -37,6 +38,7 @@ const About = () => {
           alt="meheh"
         />
         <Experince />
+        <SocialMediaStats />
         <Skills />
         <Education />
         <Idoltime />
