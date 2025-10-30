@@ -1,27 +1,29 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import Tagline from "./Tagline";
+import RotatingText from "./RotatingText";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const HeadLine = () => {
-  useGSAP(() => {
-    gsap.to(".name", {
-      duration: 1,
-      ease: "power1.inOut",
-      opacity: 1,
-      y: 0,
-    });
-  }, []);
   return (
     <div className="flex flex-col items-start">
       <div className="flex flex-col items-start justify-start leading-0 sm:leading-[96px] w-full">
-        <Tagline heading="Mohammad Harish" subheading="Full Stack Developer" />
+        <h1
+          className="text-[39px] name rotating-text-fade-in sm:text-[71px] md:text-[102px] font-[700] text-left tracking-[-2px] sm:tracking-[-4px] leading-[.9em] masked-title"
+          style={{ 
+            opacity: 0,
+            transform: "translateY(-100px)"
+          }}
+        >
+          Mohammad Harish
+        </h1>
+        <RotatingText
+          texts={["Full Stack Developer", "Content Creator"]}
+          className="text-[39px] name sm:text-[71px] md:text-[102px] font-[700] mt-0 sm:mt[-48px] text-left pb-[30px] tracking-[-2px] sm:tracking-[-4px] leading-[.9em] masked-title"
+        />
         <p className="text-[18px] xs:text-[20px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-[500] text-left leading-[22px] xs:leading-[24px] sm:leading-[32px] md:leading-[38px] lg:leading-[42px] xl:leading-[48px] pb-[15px] sm:pb-[20px] tracking-[-.6px] xs:tracking-[-.7px] sm:tracking-[-.9px] md:tracking-[-1.1px] lg:tracking-[-1.2px] xl:tracking-[-1.3px] vibe-text subheading-text">
-          As a full-Stack developer,
+          I build innovative digital solutions and teach
           <br />
-          I create innovative digital solutions
+          others to amplify their digital presence
           <br />
-          that help businesses around the world grow.
+          through code, design, and content.
         </p>
 
         <p className="text-[14px] xs:text-[15px] sm:text-[16px] font-[500] text-left leading-[20px] xs:leading-[22px] sm:leading-[24px] mt-[10px] sm:mt-[16px] mb-[28px] flex items-center gap-2 vibe-text tracking-[0.02em]">
@@ -51,3 +53,4 @@ const HeadLine = () => {
 };
 
 export default HeadLine;
+
