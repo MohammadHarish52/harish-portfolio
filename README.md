@@ -1,3 +1,3 @@
 Contains code of my portfolio
 
-Dont try to copy you motherfucker
+Dont try to copy 
