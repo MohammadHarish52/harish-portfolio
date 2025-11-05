@@ -9,7 +9,6 @@ import Tagline from "../Tagline.jsx";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-// Removed old FreelanceProject list; using ProjectList instead
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,6 +17,7 @@ const Projects = () => {
 
   useEffect(() => {
     if (h1Ref.current) {
+      gsap.set(h1Ref.current, { opacity: 0 }); // ensure it starts hidden
       gsap.fromTo(
         h1Ref.current,
         {
@@ -27,19 +27,19 @@ const Projects = () => {
         {
           y: 0,
           opacity: 1,
-          duration: 2,
+          duration: 5,
           scrollTrigger: {
             trigger: h1Ref.current,
-            start: "top 80%",
-            end: "top 20%",
+            start: "top 30%",
+            end: "top 5%",
             scrub: true,
-            duration: 1,
           },
-          ease: "power1.inOut",
+          ease:"bounce.inOut"
         }
       );
     }
   }, []);
+  
 
   return (
     <Layout>
@@ -58,7 +58,7 @@ const Projects = () => {
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-[100%] pb-[35px] sm:pb-[73px]">
           <h1
             ref={h1Ref}
-            className="text-[39px] name opacity-0 sm:text-[71px] md:text-[102px] font-[700] text-left tracking-[-4px] masked-title"
+            className="text-[39px]  sm:text-[71px] md:text-[102px] font-[700] text-left masked-title"
           >
             Projects
           </h1>
