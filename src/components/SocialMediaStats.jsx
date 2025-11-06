@@ -295,13 +295,23 @@ const SocialMediaStats = () => {
                 services.
               </p>
             </div>
-            <a
-              href="mailto:xharish52@gmail.com"
-              aria-label="Email xharish52@gmail.com"
-              className={`flex-shrink-0 inline-flex items-center justify-center text-[14px] font-[600] border-[#fff5e1] border px-6 py-3 rounded-full leading-none hover:text-[#000] hover:bg-[#fff5e1] duration-300 text-[#fff5e1]`}
-            >
-              Available for Hire
-            </a>
+            <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+              <a
+                href="mailto:xharish52@gmail.com"
+                aria-label="Email xharish52@gmail.com"
+                className={`flex-shrink-0 inline-flex items-center justify-center text-[14px] font-[600] border-[#fff5e1] border px-6 py-3 rounded-full leading-none hover:text-[#000] hover:bg-[#fff5e1] duration-300 text-[#fff5e1]`}
+              >
+                Available for Hire
+              </a>
+              <a
+                href="https://calendly.com/xharish52/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex-shrink-0 inline-flex items-center justify-center text-[14px] font-[600] bg-[#fff5e1] text-[#000] px-6 py-3 rounded-full leading-none hover:bg-transparent hover:text-[#fff5e1] hover:border-[#fff5e1] border border-[#fff5e1] duration-300`}
+              >
+                Book a Call
+              </a>
+            </div>
           </div>
         </div>
       </div>

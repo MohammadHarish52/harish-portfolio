@@ -13,6 +13,17 @@ const Contact = () => {
 
         <div className="socials">
           <a
+            href="https://calendly.com/xharish52/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-700 flex items-center mb-2 social-link text-4xl text-center"
+          >
+            <div className="mr-2 text-black text-8xl social-icon flex items-center justify-center">
+              📅
+            </div>
+            Book a Call
+          </a>
+          <a
             href="https://www.linkedin.com/in/mohammad-harish52/"
             className="text-gray-700 flex items-center mb-2 social-link text-4xl text-center"
           >
