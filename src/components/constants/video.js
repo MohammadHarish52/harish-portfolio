@@ -9,7 +9,7 @@ export const videosrc = [
   },
   {
     id: 3,
-    src: "/assets/videos/harish.mp4",
+    src: "/assets/videos/nature.mp4",
   },
   {
     id: 4,

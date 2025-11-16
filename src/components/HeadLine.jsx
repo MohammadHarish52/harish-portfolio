@@ -1,5 +1,5 @@
 import RotatingText from "./RotatingText";
-import { FaExternalLinkAlt } from "react-icons/fa";
+ 
 
 const HeadLine = () => {
   return (
@@ -12,7 +12,7 @@ const HeadLine = () => {
             transform: "translateY(-100px)"
           }}
         >
-          Mohammad Harish
+          Creative Developer
         </h1>
         <RotatingText
           texts={["Full Stack Developer", "Content Creator"]}
@@ -25,35 +25,7 @@ const HeadLine = () => {
           <br />
           through code, design, and content.
         </p>
-
-        <a
-          href="https://www.infinitestudiox.art/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 mb-[20px] text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[400] text-[#fff5e1]/60 hover:text-[#fff5e1] transition-colors duration-300"
-        >
-          Founder @ InfiniteStudioX
-          <FaExternalLinkAlt className="text-[10px] sm:text-[11px] md:text-[12px]" />
-        </a>
-
-        <div className="flex flex-wrap gap-3 sm:gap-4">
-          <a
-            id="contact"
-            href="mailto:xharish52@gmail.com"
-            aria-label="Email xharish52@gmail.com"
-            className={`inline-flex masked-title items-center justify-center text-[16px] sm:text-[18px] vibe-text font-semibold border-[#fff5e1] border px-5 sm:px-7 py-2 sm:py-3 rounded-full leading-none hover:text-[#000] hover:bg-[#fff5e1] duration-300`}
-          >
-            xharish52@gmail.com
-          </a>
-          <a
-            href="https://calendly.com/xharish52/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`inline-flex masked-title items-center justify-center text-[16px] sm:text-[18px] vibe-text font-semibold bg-[#fff5e1] text-[#000] px-5 sm:px-7 py-2 sm:py-3 rounded-full leading-none hover:bg-transparent hover:text-[#fff5e1] hover:border-[#fff5e1] border border-[#fff5e1] duration-300`}
-          >
-            Book a Call
-          </a>
-        </div>
+        <div className="flex flex-wrap gap-3 sm:gap-4"></div>
       </div>
     </div>
   );
