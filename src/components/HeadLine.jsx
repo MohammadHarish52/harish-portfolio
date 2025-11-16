@@ -1,5 +1,5 @@
 import RotatingText from "./RotatingText";
-import { FaExternalLinkAlt } from "react-icons/fa";
+ 
 
 const HeadLine = () => {
   return (
