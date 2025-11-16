@@ -23,14 +23,6 @@ const Navbar = () => {
       </a>
       {/* Mobile Menu */}
       <div className="flex items-center gap-4 sm:hidden">
-        <a
-          href="https://calendly.com/xharish52/30min"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center text-[14px] font-semibold border-[#fff5e1] border px-4 py-2 rounded-full leading-none hover:text-[#000] hover:bg-[#fff5e1] duration-300"
-        >
-          Book a Call
-        </a>
         <button
           onClick={() => setIsModalOpen(true)}
           className="p-2"
@@ -47,14 +39,6 @@ const Navbar = () => {
             <span className="vibe-text hover:text-[#E6C2BF]">{text}</span>
           </Link>
         ))}
-        <a
-          href="https://calendly.com/xharish52/30min"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center text-[16px] vibe-text font-semibold border-[#fff5e1] border px-5 py-2 rounded-full leading-none hover:text-[#000] hover:bg-[#fff5e1] duration-300"
-        >
-          Book a Call
-        </a>
       </div>
 
       {/* Modal */}

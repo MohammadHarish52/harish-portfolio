@@ -10,7 +10,6 @@ import {
   FaShare,
   FaUsers,
 } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { LightContext } from "./LightContext";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -162,35 +161,7 @@ const SocialMediaStats = () => {
             amplify their digital presence.
           </p>
 
-          <div className="flex flex-wrap items-center gap-3 mb-[40px]">
-            <a href="https://x.com/Harish_52">
-              <div
-                className={`p-2 rounded-lg border ${
-                  light
-                    ? "bg-[#000] border-[#d6d6d6]/20"
-                    : "bg-[#ffffff]/5 border-[#d6d6d6]/10"
-                }`}
-              >
-                <FaXTwitter className=" text-[#fff5e1] text-[20px]" />
-              </div>
-            </a>
-            <div className="flex items-center gap-2">
-              <span className="text-[16px] font-[500] text-[#fff5e1]">
-                <a className="text-[#fff5e1]" href="https://x.com/Harish_52">
-                  Harish_52
-                </a>
-              </span>
-            </div>
-            <div
-              className={`px-3 py-2 rounded-full text-[12px] font-[600] border ${
-                light
-                  ? "bg-[#000] border-[#d6d6d6]/20 text-[#fff5e1]"
-                  : "bg-[#ffffff]/5 border-[#d6d6d6]/10 text-[#fff5e1]"
-              }`}
-            >
-              Content Creator & Teacher
-            </div>
-          </div>
+          <div className="flex flex-wrap items-center gap-3 mb-[40px]"></div>
         </div>
 
         {/* Stats Grid */}
@@ -295,23 +266,7 @@ const SocialMediaStats = () => {
                 services.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-              <a
-                href="mailto:xharish52@gmail.com"
-                aria-label="Email xharish52@gmail.com"
-                className={`flex-shrink-0 inline-flex items-center justify-center text-[14px] font-[600] border-[#fff5e1] border px-6 py-3 rounded-full leading-none hover:text-[#000] hover:bg-[#fff5e1] duration-300 text-[#fff5e1]`}
-              >
-                Available for Hire
-              </a>
-              <a
-                href="https://calendly.com/xharish52/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`flex-shrink-0 inline-flex items-center justify-center text-[14px] font-[600] bg-[#fff5e1] text-[#000] px-6 py-3 rounded-full leading-none hover:bg-transparent hover:text-[#fff5e1] hover:border-[#fff5e1] border border-[#fff5e1] duration-300`}
-              >
-                Book a Call
-              </a>
-            </div>
+            <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto"></div>
           </div>
         </div>
       </div>
