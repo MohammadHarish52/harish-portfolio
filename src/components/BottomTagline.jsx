@@ -32,7 +32,26 @@ const BottomTagline = (props) => {
           {props.paratwotwo}
         </p>
 
-        <div className="flex flex-wrap gap-3 sm:gap-4"></div>
+        <div className="flex flex-wrap gap-3 sm:gap-4">
+          <a
+            href="mailto:xharish52@gmail.com"
+            aria-label="Email xharish52@gmail.com"
+            className={`inline-flex items-center justify-center text-[16px] sm:text-[18px] vibe-text font-semibold border-[#fff5e1] border px-5
+             sm:px-7 py-2 sm:py-3 rounded-full leading-none hover:text-[#000] hover:bg-[#fff5e1] duration-300`}
+          >
+            xharish52@gmail.com
+          </a>
+          <a
+            href="https://calendly.com/xharish52/30min"
+            target="_blank"
+            rel="noreferrer"
+            className={`inline-flex items-center justify-center text-[16px] sm:text-[18px] vibe-text font-semibold 
+            hover:bg-[#fff5e1] hover:text-[#000]
+            px-5 sm:px-7 py-2 sm:py-3 rounded-full leading-none border border-primary duration-300`}
+          >
+            Book a Call
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -33,7 +33,7 @@ const Logo = () => {
     <div className="flex items-center">
       <img
         src="/assets/logo.png"
-        alt="Site logo"
+        alt="Harish logo"
         className="h-16 w-auto sm:h-20 ml-[-4px]"
         loading="eager"
         decoding="async"

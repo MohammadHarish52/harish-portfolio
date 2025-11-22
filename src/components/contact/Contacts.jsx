@@ -11,7 +11,50 @@ const Contact = () => {
           <Tagline heading="CONNECT" subheading="SHARE AND GROW" />
         </div>
 
-        <div className="socials"></div>
+        <div className="socials">
+          <a
+            href="https://calendly.com/xharish52/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-700 flex items-center mb-2 social-link text-4xl text-center"
+          >
+            <div className="mr-2 text-black text-8xl social-icon flex items-center justify-center">
+              📅
+            </div>
+            Book a Call
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mohammad-harish52/"
+            className="text-gray-700 flex items-center mb-2 social-link text-4xl text-center"
+          >
+            <FaLinkedin className="mr-2 text-black text-8xl social-icon" />
+            <h1 className="flex justify-center align-middle">
+              Linked
+              <FaLinkedin className="text-black" />
+            </h1>
+          </a>
+          <a
+            href="https://x.com/Haarish_52"
+            className="text-gray-700 flex items-center mb-2 social-link text-4xl text-center"
+          >
+            <FaXTwitter className="mr-2 text-black text-8xl social-icon" />
+            Twitter
+          </a>
+          <a
+            href="https://github.com/MohammadHarish52"
+            className="text-gray-700 flex items-center mb-2 social-link text-4xl text-center"
+          >
+            <FaGithub className="mr-2 text-black text-8xl social-icon" />
+            Github
+          </a>
+          <a
+            href="https://www.instagram.com/hd0haha_/"
+            className="text-gray-700 flex items-center social-link text-4xl  text-center"
+          >
+            <FaInstagramSquare className="mr-2 text-black text-8xl social-icon" />
+            Instagram
+          </a>
+        </div>
       </div>
     </Layout>
   );
