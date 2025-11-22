@@ -32,7 +32,11 @@ const About = () => {
             favourite anime recommendations
           </p>
         </div>
-        
+        <img
+          className="hover-image rounded-3xl "
+          src="/assets/harish.jpg"
+          alt="meheh"
+        />
         <Experince />
         <SocialMediaStats />
         <Skills />
