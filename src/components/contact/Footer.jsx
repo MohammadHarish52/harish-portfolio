@@ -14,9 +14,9 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row gap-[10px] sm:gap-0 justify-between items-center text-[18px] font-[500] pb-[70px]">
         <div className="contacts flex gap-8 text-[18px] font-light ">
           <a href="https://calendly.com/xharish52/30min" target="_blank" rel="noopener noreferrer">Book a Call</a>
-          <a href="https://x.com/Harish_52">Twitter</a>
-          <a href="https://www.linkedin.com/in/mohammad-harish52/">Linkedin</a>
-          <a href="https://github.com/MohammadHarish52">Github</a>
+          <a href="https://x.com/Mdharish76">Twitter</a>
+          <a href="https://www.linkedin.com/in/mdharish84/">Linkedin</a>
+          <a href="https://github.com/mdharish72">Github</a>
           <a href="https://topmate.io/mohd_harish10" className="hidden sm:inline">Topmate</a>
         </div>
         <div
