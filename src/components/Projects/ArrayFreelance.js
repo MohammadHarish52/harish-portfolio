@@ -1,14 +1,31 @@
 export const freelanceArray = [
   {
     id: 1,
+    Name: "Fast & Fab",
+    bgimage: "/assets/fastfab.png",
+    bgDarkImage: "/assets/fastfab.png",
+    LinkGit: "https://fastandfab.in/",
+    Description: "Fast Fashion website",
+  },
+  {
+    id: 2,
+    Name: "Beyond Dreams",
+    bgimage: "/assets/beyonddream.png",
+    bgDarkImage: "/assets/beyonddream.png",
+    LinkGit: "https://www.beyonddream.in/user",
+    Description: "Tech events and conferences website",
+  },
+  {
+    id: 3,
     Name: "E-Legalify",
     bgimage: "/assets/elegalify.png",
     bgDarkImage: "/assets/elegalify.png",
     LinkGit: "https://freelance-1-one.vercel.app/",
     Description: "Legal website for lawyers",
   },
+
   {
-    id: 2,
+    id: 4,
     Name: "Memansa ",
     bgimage: "/assets/memansa.png",
     bgDarkImage: "/assets/memansa.png",
@@ -16,7 +33,7 @@ export const freelanceArray = [
     Description: "Accessories design website",
   },
   {
-    id: 3,
+    id: 5,
     Name: "instaChip",
     bgimage: "/assets/instachip.png",
     bgDarkImage: "/assets/instachip.png",
@@ -24,7 +41,7 @@ export const freelanceArray = [
     Description: "Restaurant management system",
   },
   {
-    id: 4,
+    id: 6,
     Name: "LetsGrowEsports",
     bgimage: "/assets/letsgrowesprots.png",
     bgDarkImage: "/assets/letsgrowesprots.png",
