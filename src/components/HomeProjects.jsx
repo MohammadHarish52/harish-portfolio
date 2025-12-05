@@ -15,7 +15,7 @@ const HomeProjects = () => {
         </div>
       </div>
       {projectsData
-        .filter((project) => project.id === 3)
+        .filter((project) => project.id === 1)
         .map((project) => (
           <div className="flex pb-[70px] flex-col w-full" key={project.id}>
             <div className="image-container -mr-2 sm:-mr-16">
