@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
+import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { LightContext } from "./LightContext";
-import { IoClose } from "react-icons/io5";
 
 const Modal = ({ isOpen, onClose }) => {
   const { light } = useContext(LightContext);
