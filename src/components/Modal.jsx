@@ -57,7 +57,7 @@ const Modal = ({ isOpen, onClose }) => {
             href="https://calendly.com/xharish52/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-flex items-center justify-center text-[18px] vibe-text font-semibold bg-[#fff5e1] text-[#000] px-6 py-3 rounded-full leading-none hover:bg-transparent hover:text-[#fff5e1] hover:border-[#fff5e1] border border-[#fff5e1] duration-300 mt-8 w-fit`}
+            className={`inline-flex items-center justify-center self-center text-[18px] vibe-text font-semibold bg-transparent text-[#fff5e1] px-6 py-3 rounded-full leading-none border border-[#fff5e1] duration-300 mt-8 w-fit hover:bg-[#fff5e1] hover:text-[#000]`}
           >
             Book a Call
           </a>
