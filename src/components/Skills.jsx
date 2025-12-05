@@ -14,13 +14,10 @@ import { FaReact } from "react-icons/fa6";
 import { FaNode } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
-import gsap from "gsap";
-import { useRef, useEffect } from "react";
-import { ScrollTrigger } from "gsap/all";
+import { useRef } from "react";
 import Rating from "./Rating";
+import useScrollAnimation from "../hooks/useScrollAnimation.js";
 // import { LightContext } from "./LightContext";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const skillsData = [
   {
@@ -80,30 +77,18 @@ const Skills = () => {
 
   const h1Ref = useRef(null);
 
-  useEffect(() => {
-    if (h1Ref.current) {
-      gsap.fromTo(
-        h1Ref.current,
-        {
-          y: -100,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 2,
-          scrollTrigger: {
-            trigger: h1Ref.current,
-            start: "top 80%", // when the top of the h1 hits 80% from the top of the viewport
-            end: "top 20%", // end when the top of the h1 hits 20% from the top of the viewport
-            scrub: true, // scrubbing makes the animation smooth
-            duration: 1,
-          },
-          ease: "power1.inOut",
-        }
-      );
+  useScrollAnimation(
+    h1Ref,
+    { y: -100, opacity: 0 },
+    { y: 0, opacity: 1, duration: 2, ease: "power1.inOut" },
+    {
+      trigger: h1Ref.current,
+      start: "top 80%",
+      end: "top 20%",
+      scrub: true,
+      duration: 1,
     }
-  }, []);
+  );
 
   return (
     <div className="flex flex-col items-start w-[100%] ">

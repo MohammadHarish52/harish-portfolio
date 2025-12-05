@@ -2,7 +2,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useContext, useEffect, useRef } from "react";
 import { FaStar } from "react-icons/fa";
-import { experienceData } from "./constants/Experince";
+import { experienceData } from "../data/experience.js";
 import { LightContext } from "./LightContext";
 
 gsap.registerPlugin(ScrollTrigger);

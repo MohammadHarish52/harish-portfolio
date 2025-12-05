@@ -1,45 +1,25 @@
+import { useRef } from "react";
 import BottomTagline from "../BottomTagline.jsx";
 import Layout from "../Layout.jsx";
-// Removed old single list component
-import ProjectList from "./ProjectList.jsx";
-import { uiuxArray } from "./ArrayUIUX.js";
-import { fullstackArray } from "./ArrayFullstack.js";
-import { freelanceArray } from "./ArrayFreelance.js";
+import ProjectCard from "../common/ProjectCard.jsx";
+import { projectsData } from "../../data/projects.js";
 import Tagline from "../Tagline.jsx";
-import { useRef, useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
-
-gsap.registerPlugin(ScrollTrigger);
+import useScrollAnimation from "../../hooks/useScrollAnimation.js";
 
 const Projects = () => {
   const h1Ref = useRef(null);
 
-  useEffect(() => {
-    if (h1Ref.current) {
-      gsap.set(h1Ref.current, { opacity: 0 }); // ensure it starts hidden
-      gsap.fromTo(
-        h1Ref.current,
-        {
-          y: -100,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 5,
-          scrollTrigger: {
-            trigger: h1Ref.current,
-            start: "top 30%",
-            end: "top 5%",
-            scrub: true,
-          },
-          ease:"bounce.inOut"
-        }
-      );
+  useScrollAnimation(
+    h1Ref,
+    { y: -100, opacity: 0 },
+    { y: 0, opacity: 1, duration: 5, ease: "bounce.inOut" },
+    {
+      trigger: h1Ref.current,
+      start: "top 30%",
+      end: "top 5%",
+      scrub: true,
     }
-  }, []);
-  
+  );
 
   return (
     <Layout>
@@ -76,7 +56,11 @@ const Projects = () => {
             UI-UX Projects
           </h2>
         </div>
-        <ProjectList items={uiuxArray} />
+        <div className="w-[100%] grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {projectsData.filter(project => project.category === 'uiux').map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
 
         {/* Full-Stack Projects */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-[100%] pb-[35px] sm:pb-[40px] mt-[60px]">
@@ -84,14 +68,22 @@ const Projects = () => {
             Full-Stack Projects
           </h2>
         </div>
-        <ProjectList items={fullstackArray} />
+        <div className="w-[100%] grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {projectsData.filter(project => project.category === 'fullstack').map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
 
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-[100%] pb-[35px] sm:pb-[73px] mt-[100px]">
           <h2 className="text-[32px] sm:text-[56px] font-[700] text-left tracking-[-3px] masked-title">
             Freelance Projects
           </h2>
         </div>
-        <ProjectList items={freelanceArray} />
+        <div className="w-[100%] grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {projectsData.filter(project => project.category === 'freelance').map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
 
         <BottomTagline
           paraone="Looking to grow your startup through "
