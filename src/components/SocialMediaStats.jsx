@@ -163,7 +163,7 @@ const SocialMediaStats = () => {
           </p>
 
           <div className="flex flex-wrap items-center gap-3 mb-[40px]">
-            <a href="https://x.com/Harish_52">
+            <a href="https://x.com/Harish_521">
               <div
                 className={`p-2 rounded-lg border ${
                   light
@@ -176,8 +176,8 @@ const SocialMediaStats = () => {
             </a>
             <div className="flex items-center gap-2">
               <span className="text-[16px] font-[500] text-[#fff5e1]">
-                <a className="text-[#fff5e1]" href="https://x.com/Harish_52">
-                  Harish_52
+                <a className="text-[#fff5e1]" href="https://x.com/Harish_521">
+                  Harish_521
                 </a>
               </span>
             </div>
